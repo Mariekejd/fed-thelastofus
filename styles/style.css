@@ -1,0 +1,47 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+.navbutton {
+background: none;
+border: none;
+}
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+img{
+	max-width: 100%;
+}
+
+footer {
+	background-color: #006FCD;
+	color: white;
+}
+
+footer a {
+	color: white;
+}
