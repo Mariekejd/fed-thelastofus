@@ -82,7 +82,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ->Er is tekst met laag contrast of onvoldoende vergrotingsopties en kan moeilijk leesbaar zijn.
   -> Kleurenblindheid kan problemen veroorzaken als de kleur de enige manier is om informatie over te brengen
 
-
   Concentratie
   -> De site bevat visueel drukke elementen zoals dynamische afbeeldingen en video's 
   -> Geen opties zoals vereenvoudige weergave of 'focusmodus'
