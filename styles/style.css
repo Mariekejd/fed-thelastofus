@@ -301,12 +301,13 @@ header a {
 .pagina1 section:nth-of-type(3) h2{
 	color: white;
 	position: absolute;
-	top: 1em;
+	top: .5em;
+	letter-spacing: 3px;
 }
 
 .pagina1 section:nth-of-type(3) article:nth-of-type(1){
 	position: absolute;
-	top: 6em;
+	top: 11.5em;
 }
 
 /*.pagina1 section:nth-of-type(3) article:nth-of-type(2){
@@ -339,10 +340,54 @@ header a {
 	margin: 2em;
 }
 
+.pagina1 div:nth-of-type(1){
+	display: flex;
+	flex-direction: row;
+
+	position: absolute;
+	top: 6em;
+	background-color: #1A1B1D;
+
+	padding: .8em;
+	border-radius: 1em;
+}
+
+.pagina1 section:nth-of-type(3) > div > button {
+	background-color: transparent; 
+	color: white;
+	font-size: 12px;
+	border: none;
+
+	padding: 1em;
+	padding-right: 1em;
+	font-family: SST-Roman-Medium, "Arial";
+}
+
+.pagina1 section:nth-of-type(3) > div > button:active{ /*click animatie verbeteren*/
+	background-color: var(--color-background);
+	color: var(--color-button-balk);
+
+	border-radius: 1em;
+} 
+
+/* Section 4: building the last of us */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 
 footer {
-	background-color: #0f1215;
+	background-color: var(--color-footer);
 	color: white;
 }
 
