@@ -16,12 +16,32 @@
 	src: url(/fonts/tlou.woff2);
 }
 
+/* font weights doen */
+
+@font-face {
+	font-family: "SST-Roman";
+	src: url(/fonts/SST-Roman-latin.40348.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: "SST-Roman-Medium";
+	src: url(/fonts/SST-Medium-latin.1167b.woff2) format('woff2');
+}
+
 @font-face {
 	font-family: "SST-RomanLight";
 	src: url(/fonts/SST-Light-latin.3cce6.woff2) format('woff2');
 }
 
+@font-face {
+	font-family: "SST-Roman-Italic";
+	src: url(/fonts/SST-Italic-latin.2a08d.woff2) format('woff2');
+}
 
+@font-face {
+	font-family: "SST-Roman-Bold";
+	src: url(/fonts/SST-Bold-latin.7c968.woff2) format('woff2');
+}
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -42,6 +62,9 @@
 
 }
 
+img{
+	max-width: 100%;
+}
 
 
 .navbutton {
@@ -200,9 +223,68 @@ header a {
 }
 
 
-img{
-	max-width: 100%;
+/*tweede section in de main*/
+
+.pagina1 section:nth-of-type(2){
+	position: relative;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #1A1B1D;
 }
+
+.pagina1 section:nth-of-type(2) h2{
+	color: white;
+	position: absolute;
+	top: 2em;
+}
+
+.pagina1 section:nth-of-type(2) article{
+	width: 70%;
+	padding-bottom: 20px;
+}
+
+.pagina1 section:nth-of-type(2) article:nth-of-type(1){
+	position: absolute;
+	top: 10em;
+}
+
+.pagina1 section:nth-of-type(2) article img{
+	border-radius: .5em;
+}
+
+.pagina1 article p:nth-of-type(1){
+	color: #53B1FF;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.pagina1 article h3, p, time {
+	color: white;
+	font-family: SST-RomanLight, "Arial";
+}
+
+.pagina1 article h3{
+	font-family: SST-Roman, "Arial" ;
+	font-size: 15.5px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+.pagina1 section:nth-of-type(2) p, time{
+	font-size: 14px;
+}
+
+.pagina1 section:nth-of-type(2) time{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/* footer */
 
 footer {
 	background-color: #006FCD;
