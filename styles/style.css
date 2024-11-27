@@ -3,11 +3,23 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
+@font-face {
+	font-family: "TlouRough" ;
+	src: url(/fonts/tlou-rough.woff2) format('woff2');
+}
+@font-face {
+	font-family: "Tlou";
+	src: url(/fonts/tlou.woff2);
+}
 
-
-
+@font-face {
+	font-family: "SST-RomanLight";
+	src: url(/fonts/SST-Light-latin.3cce6.woff2) format('woff2');
+}
 
 
 /*********************/
@@ -17,6 +29,17 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-footer: #00439B;
+	--color-button: #0070CB;
+	--color-button-balk: #1A1B1D;
+	--color-gray: #757575;
+	--color-button-red: #D53C02;
+	--color-text-yellow: #FCC71B;
+	--color-text-blue: #53B1FF;
+
+	--font-regular-text: Arial, Helvetica, sans-serif;
+	--font-heading-text: "theLastofUs";
+
 }
 
 
@@ -32,6 +55,150 @@ border: none;
 /****************/
 
 /* jouw code */
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-direction: column;
+
+	position:sticky;
+  	top:0;
+  	z-index:10;
+  	backdrop-filter:blur(.25em);
+	background-color: white;
+}
+
+nav ul{
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+}
+
+nav ul:first-of-type li:nth-of-type(2), nav ul:first-of-type li:nth-of-type(3){
+	margin-right: auto;
+}
+
+nav ul img{
+	right: auto;
+
+}
+
+
+nav ul:nth-last-of-type(1){
+	justify-content: center;
+}
+
+/* nav ul:first-child{
+	justify-content: space-around;
+} */
+
+nav ul:first-child li{
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	list-style-type: none;
+	font-family: var(--font-regular-text);
+	font-size: .8em;
+	padding: 0 1em 1em .5em;
+}
+
+
+nav ul li a{
+	text-decoration: none;
+	color: var(--color-gray);
+}
+
+nav ul:first-of-type a {
+	color: white;
+	background-color: var(--color-button);
+	padding: .5em 1em;
+	border-radius: 1em;
+	margin-right: .3em;
+}
+
+header section img:first-of-type{
+	z-index: -1;
+}
+
+h1 {
+	font-family: TlouRough, "Arial";
+	font-size: 5em;
+	letter-spacing: 2px;
+	color: white;
+}
+
+p {
+	font-family: SST-RomanLight, "Arial";
+}
+
+header section {
+	display: grid;
+}
+
+header div{
+	background-color: #1A1B1D;
+	color: white;
+	height: auto;
+	padding-bottom: 3em;
+}
+
+header p{
+	padding: 1em;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+header a {
+	text-decoration: none;
+	font-family: SST-RomanLight, "Arial";
+	background-color: white;
+	color: #1A1B1D;
+	padding: .5em 1em;
+	border-radius: 1em;
+	margin-left: 1em;
+	display: block;
+	width:fit-content;
+}
+
+.pagina1 main section:nth-of-type(1) img{
+	z-index: -1;
+}
+
+.pagina1 header{
+	height: auto;
+}
+
+.pagina1 h2 {
+	font-family: Tlou, "Arial";
+	letter-spacing: 1px;
+	font-size: 2em;
+}
+
+.pagina1 section:first-of-type{
+	position: relative;
+}
+
+.pagina1 section:first-of-type h2:nth-of-type(1){
+	position: absolute;
+	color: white;
+	padding: 1em;
+	top: 5em;
+}
+
+.pagina1 section:first-of-type p:nth-of-type(1){
+	position: absolute;
+	color: white;
+	padding: 2.5em;
+	font-size: 13px;
+	top: 22em;
+}
+
 
 img{
 	max-width: 100%;
