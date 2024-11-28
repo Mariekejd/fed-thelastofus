@@ -47,8 +47,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-black:#111;
+	--color-white:#ffffff;
 	--color-footer: #00439B;
 	--color-button: #0070CB;
 	--color-button-balk: #1A1B1D;
@@ -66,6 +66,9 @@ img{
 	max-width: 100%;
 }
 
+h2{
+	font-family: Tlou, "Arial";
+}
 
 .navbutton {
 background: none;
@@ -79,7 +82,7 @@ border: none;
 
 /* jouw code */
 
-nav{
+header nav{
 	display: flex;
 	align-items: center;
 	justify-content: start;
@@ -134,11 +137,11 @@ header nav ul li{
 
 header nav ul li a{
 	text-decoration: none;
-	color: var(--color-text);
+	color: var(--color-black);
 }
 
 header nav ul:first-of-type a {
-	color: white;
+	color: var(--color-white);
 	background-color: var(--color-button);
 	padding: .5em 1em;
 	border-radius: 1em;
@@ -153,7 +156,7 @@ h1 {
 	font-family: TlouRough, "Arial";
 	font-size: 5em;
 	letter-spacing: 2px;
-	color: white;
+	color: var(--color-white);
 }
 
 p {
@@ -165,8 +168,8 @@ header section {
 }
 
 header div{
-	background-color: #1A1B1D;
-	color: white;
+	background-color: var(--color-button-balk);
+	color: var(--color-white);
 	height: auto;
 	padding-bottom: 3em;
 }
@@ -180,8 +183,8 @@ header p{
 header a {
 	text-decoration: none;
 	font-family: SST-RomanLight, "Arial";
-	background-color: white;
-	color: #1A1B1D;
+	background-color: var(--color-white);
+	color: var(--color-button-balk);
 	padding: .5em 1em;
 	border-radius: 1em;
 	margin-left: 1em;
@@ -189,34 +192,34 @@ header a {
 	width:fit-content;
 }
 
-.pagina1 main section:nth-of-type(1) img{
+.storyTlou img{
 	z-index: -1;
 }
 
-.pagina1 header{
+header{
 	height: auto;
 }
 
-.pagina1 h2 {
+h1 {
 	font-family: Tlou, "Arial";
 	letter-spacing: 1px;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
-.pagina1 section:first-of-type{
+.storyTlou{
 	position: relative;
 }
 
-.pagina1 section:first-of-type h2:nth-of-type(1){
+.storyTlou h1{
 	position: absolute;
-	color: white;
-	padding: 1em;
-	top: 5em;
+	color: var(--color-white);
+	padding: 1.2em;
+	top: 6em;
 }
 
-.pagina1 section:first-of-type p:nth-of-type(1){
+.storyTlou p:nth-of-type(1){
 	position: absolute;
-	color: white;
+	color: var(--color-white);
 	padding: 2.5em;
 	font-size: 13px;
 	top: 22em;
@@ -225,59 +228,63 @@ header a {
 
 /*tweede section in de main*/
 
-.pagina1 section:nth-of-type(2){
+.discover {
 	position: relative;
 	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	background-color: #1A1B1D;
+	background-color: var(--color-button-balk);
 }
 
-.pagina1 section:nth-of-type(2) h2{
-	color: white;
+.discover h2{
+	color: var(--color-white);
 	position: absolute;
-	top: 2em;
+	top: 1em;
+	
+	letter-spacing: 2px;
+	font-size: 3.3em;
+	text-align: center;
 }
 
-.pagina1 section:nth-of-type(2) article{
+.discover article{
 	width: 70%;
 	padding-bottom: 20px;
 }
 
-.pagina1 section:nth-of-type(2) article:nth-of-type(1){
+.discover article:nth-of-type(1){
 	position: absolute;
-	top: 10em;
+	top: 14em;
 }
 
-.pagina1 section:nth-of-type(2) article img{
+.discover article img{
 	border-radius: .5em;
 }
 
-.pagina1 section:nth-of-type(2) article p:nth-of-type(1){
+.discover article p:nth-of-type(1){
 	color: #53B1FF;
 	font-weight: bold;
 	font-size: 13px;
 }
 
-.pagina1 article h3, p, time {
-	color: white;
+.discover article h3, p, time {
+	color: var(--color-white);
 	font-family: SST-RomanLight, "Arial";
 }
 
-.pagina1 article h3{
+.discover article h3{
 	font-family: SST-Roman, "Arial" ;
 	font-size: 15.5px;
 	padding-bottom: 2px;
 	padding-top: 2px;
 }
 
-.pagina1 section:nth-of-type(2) p, time{
+.discover p, time{
 	font-size: 14px;
 }
 
-.pagina1 section:nth-of-type(2) time{
+.discover time{
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -285,7 +292,7 @@ header a {
 
 /* section 3: Meet the Cast */
 
-.pagina1 section:nth-of-type(3){
+.cast{
 	position: relative;
 	
 	display: flex;
@@ -293,44 +300,41 @@ header a {
 	align-items: center;
 }
 
-.pagina1 section:nth-of-type(3) img:nth-of-type(1){
+
+.cast img:nth-of-type(1){
 	z-index: -1;
 }
 
 
-.pagina1 section:nth-of-type(3) h2{
-	color: white;
+.cast h2{
+	color: var(--color-white);
 	position: absolute;
 	top: .5em;
 	letter-spacing: 3px;
+	font-size: 3em;
 }
 
-.pagina1 section:nth-of-type(3) article:nth-of-type(1){
+.cast article:nth-of-type(1){
 	position: absolute;
-	top: 11.5em;
+	top: 15em;
 }
 
-/*.pagina1 section:nth-of-type(3) article:nth-of-type(2){
-	position: absolute;
-	top: 42em;
-}*/
-
-
-.pagina1 section:nth-of-type(3) article{
+.cast article{
 	width: 70%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.pagina1 section:nth-of-type(3) article h3{
+.cast article h3{
 	font-family: Tlou, "Arial";
 	letter-spacing: 1.5px;
 	font-size: 1.6em;
 	text-align: center;
+	color: var(--color-white);
 }
 
-.pagina1 section:nth-of-type(3) article button {
+.cast article button {
 	font-family: SST-Roman-Medium, "Arial";
 	background-color: white;
 	color: #1A1B1D;
@@ -340,19 +344,19 @@ header a {
 	margin: 2em;
 }
 
-.pagina1 section:nth-of-type(3) div:nth-of-type(1){
+.cast div:nth-of-type(1){
 	display: flex;
 	flex-direction: row;
 
 	position: absolute;
-	top: 6em;
+	top: 8em;
 	background-color: #1A1B1D;
 
 	padding: .8em;
 	border-radius: 1em;
 }
 
-.pagina1 section:nth-of-type(3) > div > button {
+.cast > div > button {
 	background-color: transparent; 
 	color: white;
 	font-size: 12px;
@@ -363,8 +367,8 @@ header a {
 	font-family: SST-Roman-Medium, "Arial";
 }
 
-.pagina1 section:nth-of-type(3) > div > button:active{ /*click animatie verbeteren*/
-	background-color: var(--color-background);
+.cast > div > button:active{ /*click animatie verbeteren*/
+	background-color: var(--color-white);
 	color: var(--color-button-balk);
 
 	border-radius: 1em;
@@ -373,7 +377,7 @@ header a {
 /* Section 4: building the last of us */
 
 .buildingTlou{
-	background-color: var(--color-text);
+	background-color: var(--color-black);
 	color: var(--color-background);
 }
 
@@ -381,19 +385,24 @@ header a {
 	letter-spacing: 2px;
 	text-align: center;
 	padding: 1em;
+	color: var(--color-white);
+	font-size: 2.5em;
 }
 
 .buildingTlou p{
 	font-family: SST-RomanLight, "Arial";
 	text-align: center;
-	color: var(--color-gray);
-	padding-bottom: 2.5em;
+	color: var(--color-white); /* andere kleur nog */
+	padding-bottom: 2em;
+	padding-left: .8em;
+	padding-right: .8em;
 }
 
 .buildingTlou figcaption{
 	font-family: SST-RomanLight, "Arial";
 	font-size: 12.5px;
 	padding: 1em;
+	color: var(--color-white);
 }
 
 .buildingTlou figure {
@@ -409,15 +418,16 @@ header a {
 /* section 5 latest news */
 
 .tlouNews {
-	background-color: var(--color-text);
-	color: var(--color-background);
+	background-color: var(--color-black);
+	color: var(--color-white);
 	padding-bottom: 1em;
 }
 
 .tlouNews h2{
 	letter-spacing: 2px;
 	text-align: center;
-	padding: 1em;
+	padding-top: 1em;
+	font-size: 1.8em;
 }
 
 .tlouNews article{
@@ -426,7 +436,7 @@ header a {
 	grid-template-rows: auto auto auto auto;
 	grid-column-gap: 0;
 	grid-row-gap: 0px;
-	background-color: #1D1E21;
+	background-color: var(--color-button-balk);
 	padding: .3em;
 	margin: 4em;
 	border-radius: 1em;
@@ -440,10 +450,12 @@ header a {
 .tlouNews article h3{
 	grid-column: 1 / 3;
 	padding: .6em;
+	font-family: SST-Roman, "Arial";
+	font-size: 1em;
 }
 
 .tlouNews article p:nth-of-type(1){
-	color: var(--color-background);
+	color: var(--color-white);
 	font-family: SST-RomanLight, "Arial";
 	font-size: 13px;
 	grid-column: 1 / 3;
@@ -451,7 +463,7 @@ header a {
 }
 
 .tlouNews article p:nth-of-type(2){
-	color: var(--color-background);
+	color: var(--color-white);
 	font-family: SST-RomanLight, "Arial";
 	font-size: 13px;
 	
@@ -480,28 +492,28 @@ header a {
 .tlouCommunity h2{
 	position: absolute;
 	letter-spacing: 2px;
-	top: 2em;
+	top: 4em;
 	padding: 1em;
+	color: var(--color-white);
 }
 
 .tlouCommunity p{
 	position: absolute;
-	top: 9em;
-	padding: 2em;
+	top: 10em;
+	padding: 1.5em;
 	font-size: 14px;
 }
 
 .tlouCommunity button{
 	position: absolute;
-	top: 18em;
-	right: 25em;
-	left: 2em;
+	top: 20em;
+	left: 1.5em;
 
-	background-color: var(--color-background);
-	color: var(--color-text);
+	background-color: var(--color-white);
+	color: var(--color-black);
 	border-radius: 1.5em;
-	padding: .5em 1em;
-	font-family: SST-Roman-Medium, "Arial";
+	padding: .8em 1.8em;
+	font-family: SST-Roman-bold, "Arial";
 	border: none;
 }
 
@@ -514,7 +526,10 @@ header a {
 }
 
 .faq h2{
-	padding: .7em;
+	padding-left: .3em;
+	padding-bottom: .3em;
+	font-size: 3em;
+	letter-spacing: 2px;
 }
 
 
@@ -531,6 +546,7 @@ header a {
 	letter-spacing: 2px;
 	text-align: center;
 	padding: .5em;
+	font-size: 2em;
 }
 
 .about {
@@ -538,7 +554,7 @@ header a {
 }
 
 .about p{
-	color: var(--color-text);
+	color: var(--color-black);
 	font-family: SST-RomanLight, "Arial";
 	font-size: 12.5px;
 	line-height: 23.5px;
@@ -550,13 +566,143 @@ header a {
 }
 
 
+/*****************/
+/* CSS Pagina 2 */
+/****************/
+
+
+.tlouRemaster{
+	background-color: var(--color-button-balk);
+}
+
+.tlouRemaster img{
+	display: block;
+}
+
+
+
+
+
+
+
 /* footer */
 
 footer {
 	background-color: var(--color-footer);
-	color: white;
+	color: var(--color-white);
+	
+	display: flex;
+	flex-direction: column;
+
+}
+
+footer div img:nth-of-type(1){
+	width: 70%;
+	padding: 0;
+	margin: 0;
+	padding-top: 1em;
+}
+
+footer div:nth-of-type(1) > ul:nth-of-type(1){
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 1em;
+	align-items: end;
+
+	font-family: SST-RomanLight, "Arial";
+}
+
+
+/* bron voor breadcrumbs: mdn*/
+
+footer div:nth-of-type(1) > ul:nth-of-type(1) li:nth-of-type(1):after{
+	display: inline-block;
+  	margin: 0 0.25rem;
+  	content: ">>";
+	color: rgba(255, 255, 255, 0.5);
+}
+
+footer div:nth-of-type(1) > ul:nth-of-type(1) li:nth-of-type(2)::after{
+	display: inline-block;
+  	margin: 0 0.25rem;
+  	content: "|";
+}
+
+footer div:nth-of-type(2){
+	font-size: 14px;
+	border-top: .5px solid var(--color-white);
+	border-bottom: .5px solid var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+footer div:nth-of-type(2) p{
+	padding: 1em;
+	font-size: 13px;
+}
+
+footer div:nth-of-type(3) button{
+	background-color: transparent;
+	color: var(--color-white);
+	font-family: SST-RomanLight, "Arial";
+	font-size: .8em;
+	border: none;
+	padding: 1em;
+	margin-top: .5em;
+}
+
+footer details {
+	font-family: SST-RomanLight, "Arial";
+	padding: 1em;
+	font-size: 1em;
+}
+
+footer details summary{
+	font-size: 1em;
+	padding-top: 1em;
+	font-family: SST-Roman-Medium, "Arial";
+	border-top: 1px solid var(--color-white);
+}
+
+footer details ul{
+	list-style-type: none;
+}
+
+footer details ul li{
+	padding: .5em;
 }
 
 footer a {
-	color: white;
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+footer div:nth-of-type(3) ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	align-items: center;
+	padding: 1em;
+}
+
+
+footer div:nth-of-type(3) ul li{
+	font-family: SST-RomanLight, "Arial";
+	font-size: .8em;
+	list-style-type: none;
+
+	text-align: center;
+}
+
+footer div:nth-of-type(3) ul li:after{
+	display: inline-block;
+  	margin: 0.25rem;
+  	content: "|";
+}
+
+footer a img {
+	width: 30%;
 }
