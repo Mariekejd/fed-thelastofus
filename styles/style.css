@@ -152,13 +152,6 @@ header section img:first-of-type{
 	z-index: -1;
 }
 
-h1 {
-	font-family: TlouRough, "Arial";
-	font-size: 5em;
-	letter-spacing: 2px;
-	color: var(--color-white);
-}
-
 p {
 	font-family: SST-RomanLight, "Arial";
 }
@@ -200,11 +193,6 @@ header{
 	height: auto;
 }
 
-h1 {
-	font-family: Tlou, "Arial";
-	letter-spacing: 1px;
-	font-size: 1.8em;
-}
 
 .storyTlou{
 	position: relative;
@@ -215,6 +203,12 @@ h1 {
 	color: var(--color-white);
 	padding: 1.2em;
 	top: 6em;
+
+	font-family: TlouRough, "Arial";
+	letter-spacing: 2px;
+
+	letter-spacing: 1.5px;
+	font-size: 1.8em;
 }
 
 .storyTlou p:nth-of-type(1){
@@ -571,18 +565,101 @@ h1 {
 /****************/
 
 
-.tlouRemaster{
+section:nth-of-type(1){
 	background-color: var(--color-button-balk);
+	position: relative;
 }
 
-.tlouRemaster img{
-	display: block;
+h1{
+	color: var(--color-white);
+	font-family: SST-RomanLight, "Arial";
+	padding: 0 .7em;
+	font-size: 2em;
+
+	position: absolute;
+	top: 10em;
 }
 
+p, ul, li, form{
+	font-family: SST-RomanLight, "Arial";
+	color: var(--color-white);
+}
 
+p:first-of-type{
+	padding-bottom: 1em;
+	padding-top: 3em;
+	font-size: .8em;
+	padding-left: 2em;
+}
 
+p:nth-of-type(2){
+	padding-bottom: 1em;
+	padding-top: .3em;
+	font-size: .6em;
+	padding-left: 2.5em;
+}
 
+p:nth-of-type(3){
+	padding-bottom: 1em;
+	padding-top: .3em;
+	padding-left: 1.5em;
+}
 
+section:nth-of-type(1) img:first-of-type{
+	z-index: -1;
+}
+
+section:nth-of-type(1) form{
+	padding: 1em;
+	padding-left: 1.3em;
+}
+
+section:nth-of-type(1) button:nth-of-type(1){
+	background-color: var(--color-button-red);
+	color: var(--color-white);
+	padding: .7em 8em ;
+	border-radius: 1.3em;
+	border: none;
+
+	font-family: SST-Roman-Medium, "Arial";
+	margin-bottom: 1em;
+	margin-left: 1.2em;
+}
+
+section:nth-of-type(1) button:nth-of-type(2){
+	background-color: var(--color-gray);
+	color: var(--color-white);
+	padding: .7em 1em ;
+	border-radius: 1.3em;
+	border: none;
+
+	font-family: SST-Roman-Medium, "Arial";
+	margin-bottom: 1em;
+	margin-left: .6em;
+
+}
+
+section:nth-of-type(1) ul{
+	padding: 1em;
+	list-style-type: none;
+	font-size: .8em;
+}
+
+p:nth-of-type(4), p:nth-of-type(5), p:nth-of-type(6){
+	padding-left: 1em;
+	font-size: .8em;
+}
+
+section:nth-of-type(1) figure {
+	padding: 1.2em;
+	transition: 300ms;
+}
+
+section:nth-of-type(1) figure:hover{
+	transform: scale(1.04);
+}
+
+/*section 2 */
 
 
 /* footer */
