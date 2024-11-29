@@ -137,10 +137,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Header in body zetten
+  - Gebruik maken van details (nieuwe html tag)
+  - Paar kleine detail foutjes in html verbeteren
+  - Twee UL's in Navigation maken
+  - Kiezen welke micro-interaction je gaat focussen
+
 
 </details>
 
