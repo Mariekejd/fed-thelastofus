@@ -178,10 +178,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - 
-  - 
-  - 
-- ...
+  - nav tweede pagina is anders (heeft maar 2 li's)
+  - ds-store kan weg 
+  - nav button class weghalen
+  - Section en articles altijd beginnen met heading en van plaats wisselen met order
+  - width in html weg halen
+  - goed beargumenteren waarom wel divs en classes
 
 </details>
 

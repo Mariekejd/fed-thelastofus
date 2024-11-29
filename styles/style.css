@@ -9,38 +9,38 @@
 
 @font-face {
 	font-family: "TlouRough" ;
-	src: url(/fonts/tlou-rough.woff2) format('woff2');
+	src: url("../fonts/tlou-rough.woff2") format('woff2');
 }
 @font-face {
 	font-family: "Tlou";
-	src: url(/fonts/tlou.woff2);
+	src: url("../fonts/tlou.woff2");
 }
 
 /* font weights doen */
 
 @font-face {
 	font-family: "SST-Roman";
-	src: url(/fonts/SST-Roman-latin.40348.woff2) format('woff2');
+	src: url("../fonts/SST-Roman-latin.40348.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "SST-Roman-Medium";
-	src: url(/fonts/SST-Medium-latin.1167b.woff2) format('woff2');
+	src: url("../fonts/SST-Medium-latin.1167b.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "SST-RomanLight";
-	src: url(/fonts/SST-Light-latin.3cce6.woff2) format('woff2');
+	src: url("../fonts/SST-Light-latin.3cce6.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "SST-Roman-Italic";
-	src: url(/fonts/SST-Italic-latin.2a08d.woff2) format('woff2');
+	src: url("../fonts/SST-Italic-latin.2a08d.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "SST-Roman-Bold";
-	src: url(/fonts/SST-Bold-latin.7c968.woff2) format('woff2');
+	src: url("../fonts/SST-Bold-latin.7c968.woff2") format('woff2');
 }
 /*********************/
 /* CUSTOM PROPERTIES */
