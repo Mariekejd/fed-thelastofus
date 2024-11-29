@@ -167,17 +167,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ...            | ...                | ...          | ...              |
 
 
-  -> Hoe rek ik images uit zodat alle content op een image kan staan?
   -> Efficient css
   -> Waar mag ik classes gebruiken en hoeveel? (sections of body?)
   -> Instagram feed in html
+  -> In hoeverre moet ik alles uitwerken
+  -> Font gaat niet naar github + sommige plaatjes
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - 
+  - 
+  - 
 - ...
 
 </details>
