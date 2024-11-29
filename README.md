@@ -184,6 +184,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Section en articles altijd beginnen met heading en van plaats wisselen met order
   - width in html weg halen
   - goed beargumenteren waarom wel divs en classes
+  - 1 carrousel uitwerken en hamburger menu (carrousel in t begin)
+  - button hover niet vergeten
+  - consistent em en px gebruik? 
 
 </details>
 

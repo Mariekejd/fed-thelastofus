@@ -56,6 +56,7 @@
 	--color-button-red: #D53C02;
 	--color-text-yellow: #FCC71B;
 	--color-text-blue: #53B1FF;
+	--color-blue-gray: #252E32;
 
 	--font-regular-text: Arial, Helvetica, sans-serif;
 	--font-heading-text: "theLastofUs";
@@ -70,7 +71,7 @@ h2{
 	font-family: Tlou, "Arial";
 }
 
-.navbutton {
+header button {
 background: none;
 border: none;
 }
@@ -679,7 +680,7 @@ h1{
 	left: 0;
 	height: 100%;
 	object-fit: cover;
-
+	filter: brightness(45%);
 }
 
 .remasterTlou2 h2{
@@ -749,6 +750,297 @@ h1{
 	padding-top: 1em;
 	font-size: 1em;
 }
+
+/* section 4*/
+
+.upgrade{
+	background-color: var(--color-blue-gray);
+	padding: 1em;
+	padding-top: 3em;
+}
+
+.upgrade h2{
+	color: var(--color-white);
+	letter-spacing: 2px;
+	font-size: 1.7em;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.upgrade article{
+	display: grid;
+	grid-template-columns: (2, 1fr);
+	grid-template-rows: (3, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.upgrade article h3{
+	font-family: SST-RomanLight, "Arial";
+	color: var(--color-white);
+	padding-bottom: 2em;
+	padding-top: 2em;
+	padding-left: 0;
+	grid-column: 0 / 2 ;
+
+}
+
+.upgrade ul{
+	padding: 1em;
+	grid-column: 0 / 1;
+	grid-row: 2 / 3;
+}
+
+.upgrade ul li{
+	padding-bottom: 1em;
+}
+
+.upgrade article img{
+
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.upgrade p:first-of-type{
+	font-size: .5em;
+	line-height: 1.5em;
+}
+
+.upgrade h3{
+	font-family: SST-RomanLight, "Arial";
+	text-align: center;
+	color: var(--color-white);
+	padding: 1em;
+}
+
+.upgrade p:nth-of-type(2){
+	font-family: SST-RomanLight, "Arial";
+	font-size: .8em;
+	text-align: center;
+	padding: .8em;
+	line-height: 1.5em;
+}
+
+/* section 5 game nights videos */
+
+.gameNights{
+	background-color: var(--color-black);
+	color: var(--color-background);
+	padding-bottom: 2em;
+}
+
+.gameNights h2{
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 1em;
+	color: var(--color-white);
+	font-size: 2em;
+}
+
+.gameNights > p:nth-of-type(1){
+	font-family: SST-RomanLight, "Arial";
+	text-align: center;
+	color: var(--color-white); /* andere kleur nog */
+	padding-bottom: 2em;
+	padding-left: .8em;
+	padding-right: .8em;
+	font-size: .9em;
+}
+
+.gameNights figure p{
+	padding-top: 1em;
+	font-family: SST-RomanLight, "Arial";
+	font-size: 1.18em;
+}
+
+.gameNights figcaption{
+	font-family: SST-RomanLight, "Arial";
+	font-size: 12.5px;
+	padding-top: 1em;
+	color: var(--color-white);
+	padding-bottom: 3em;
+}
+
+.gameNights figure {
+	padding: 1.2em;
+	transition: 300ms;
+}
+
+.gameNights figure:hover{
+	transform: scale(1.04);
+}
+
+/* section 6 tlou1 */
+
+.discoverTlou1{
+	color: var(--color-white);
+	position: relative;
+	padding: 6em 2em 20em 2em;
+}
+
+.discoverTlou1 div{
+	background-color: var(--color-button-balk);
+	padding: 2em;
+}
+
+.discoverTlou1 h2{
+	letter-spacing: 1.5px;
+	padding-bottom: 1em;
+}
+
+.discoverTlou1 h3{
+	font-family: SST-RomanLight, "Arial";
+	padding-bottom: 1em;
+}
+
+.discoverTlou1 p{
+	font-size: .8em;
+	padding-bottom: 1.5sem;
+}
+
+.discoverTlou1 a{
+	font-family: SST-Roman-Medium, "Arial";
+	color: var(--color-black);
+	background-color: var(--color-white);
+	text-decoration: none;
+	padding: .5em 1em;
+	font-size: .8em;
+	border-radius: 1em;
+	
+}
+
+.discoverTlou1 a:nth-of-type(2){
+	background-color: var(--color-gray);
+	color: var(--color-white); 
+}
+
+.discoverTlou1 img{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+/* section 7 instagram */
+
+
+.instagram {
+	background-color: var(--color-button-balk);
+	color: var(--color-white);
+	padding: 1em;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.instagram h2{
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 1em;
+}
+
+.instagram div{
+
+	padding-bottom: 3em;
+
+	display: grid;
+	grid-template-columns: repeat(14, 1);
+	grid-template-rows: repeat(26, 1);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+
+}
+
+.instagram div img:nth-of-type(1){
+	grid-column: 1 / 14;
+	grid-row: 1 / 26;
+}
+
+.instagram div img:nth-of-type(2){
+	grid-column: 2 / 4;
+	grid-row: 23 / 25 ;
+	border-radius: .8em;
+}
+
+.instagram div img:nth-of-type(3){
+	grid-column: 12/ 13;
+	grid-row: 2 / 3;
+}
+
+
+.instagram div p:nth-of-type(1){
+	grid-column: 4 / 8 ;
+	grid-row: 23 / 25;
+	font-size: 1em;
+}
+
+.instagram div p:nth-of-type(2){
+	grid-column: 10 / 13;
+	grid-row: 23 / 25;
+	font-size: .8em;
+	text-align: end;
+}
+
+/*.instagram img:nth-of-type(1){
+	z-index: -1;
+	border: 10px solid var(--color-button-balk) ;
+	border-radius: 1em;
+}
+  
+.instagram img:nth-of-type(2){
+	position: absolute;
+	left: .6em;
+	top: 23em;
+}
+
+.instagram div p:first-of-type{
+	position: absolute;
+	top: 24em;
+	left: 4em;
+}
+
+.instagram div p:nth-last-of-type(1){
+	position: absolute;
+	top: 24.5em;
+	right: .7em;
+} */
+
+.instagram button{
+	border: none;
+	border-radius: 1.5em;
+	background-color: var(--color-gray);
+	color: var(--color-white);
+	font-family: SST-Roman-Medium, "Arial";
+
+	padding: .8em 1.5em;
+	width: auto;
+	padding-bottom: 1em;
+}
+
+.instagram > p:nth-of-type(1),
+.instagram > p:nth-of-type(2) {
+  font-size: .8em;
+  padding-bottom: 1em;
+  line-height: 1.6em;
+}
+
+.instagram > p:nth-of-type(1){
+	padding-top: 4em;
+}
+
+.instagram > p:last-child{
+	font-size: .9em;
+	text-align: center;
+	line-height: 1.4em;
+	padding: 2.5em 1em;
+
+}
+
 
 
 
