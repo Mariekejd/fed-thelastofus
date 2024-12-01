@@ -208,7 +208,7 @@ header div{
     grid-template-columns: (5, 1);
     grid-template-rows: (5, 1);
     gap: 0px;
-	padding-bottom: 0;
+	padding-bottom: 5em;
 	}
 
 header div p{
@@ -362,7 +362,6 @@ nav .toonMenu{
 
 .discover article{
 	width: 70%;
-	padding-bottom: 20px;
 }
 
 .discover article:nth-of-type(1){
@@ -402,16 +401,30 @@ nav .toonMenu{
 	padding-bottom: 20px;
 }
 
-@media (width: 1024px){
+@media (min-width: 1024px){
 
 	.discover{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	.discover article{
-		width: 50%;
+		width: 25%;
+		padding: 1em;
+	}
+
+	.discover h2{
+		position: absolute;
+		top: 2em;
+		left: 50%;  
+		transform: translateX(-50%); 
+		text-align: center;
+	}
+
+	.discover > img:first-child{
+		content: url("./images/tlou-discover-desktop-ver.jpeg");
 	}
 
 }
@@ -499,6 +512,38 @@ nav .toonMenu{
 	border-radius: 1em;
 } 
 
+@media (min-width: 1024px){
+
+	.cast {
+		display: grid; 
+		grid-template-rows: auto auto auto; 
+		grid-template-columns: repeat(3, 1fr); 
+		gap: 1.5em; 
+		justify-items: center; 
+		align-items: center; 
+		padding-left: 7em;
+		padding-right: 7em;
+		padding-bottom: 4em;
+	  }
+	
+	  .cast h2 {
+		grid-column: 1 / -1; 
+		text-align: center;
+		font-size: 4em !important;
+	  }
+	
+	  .cast div:nth-of-type(1) {
+		grid-column: 1 / -1; 
+		justify-content: center;
+	  }
+	
+	  .cast article {
+		grid-column: span 1; 
+		width: 100%; 
+		padding: 1em;
+	  }
+	}
+
 /* Section 4: building the last of us */
 
 .buildingTlou{
@@ -537,6 +582,55 @@ nav .toonMenu{
 
 .buildingTlou figure:hover{
 	transform: scale(1.04);
+}
+
+@media (min-width: 1024px){
+	
+	.buildingTlou{
+		display: grid;
+    	grid-template-columns: repeat(3, 1fr);
+    	grid-template-rows: auto 8em 1fr 1fr;
+    	gap: 2px;
+		row-gap: 0;
+	}
+
+	.buildingTlou h2{
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		padding-bottom: 0;
+	}
+
+	.buildingTlou p{
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		padding-top: 1.7em;
+	}
+
+	.buildingTlou figure:first-of-type{
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+	}
+
+	.buildingTlou figure:nth-of-type(2){
+		grid-column: 2 / 3;
+		grid-row: 3 / 4;
+	}
+
+	.buildingTlou figure:nth-of-type(3){
+		grid-column: 3 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.buildingTlou figure:nth-of-type(4){
+		grid-column: 1 / 2;
+		grid-row: 4 / 5;
+	}
+
+	.buildingTlou figure:nth-of-type(5){
+		grid-column: 2 / 3;
+		grid-row: 4 / 5;
+	}
+
 }
 
 
@@ -602,6 +696,8 @@ nav .toonMenu{
 	grid-column: 1 /2;
 	padding: .5em;;
 }
+
+
 
 /* section 6: Tlou community */
 
