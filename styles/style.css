@@ -63,8 +63,33 @@
 
 }
 
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+@media (min-width: 1024px){
+
+	p{
+		font-size: 1em !important;
+	}
+
+	h1{
+		font-size: 2em !important;
+	}
+
+	h2{
+		font-size: 3.3em !important;
+	}
+
+	h3{
+		font-size: 2em !important;
+	}
+}
+
 img{
-	max-width: 100%;
+	width: 100%;
 }
 
 h2{
@@ -72,37 +97,36 @@ h2{
 }
 
 header button {
-background: none;
-border: none;
+	background: none;
+	border: none;
 }
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
 header nav{
+	position:sticky;
+  	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
 	display: flex;
 	align-items: center;
 	justify-content: start;
 	flex-direction: column;
 
-	position:sticky;
-  	top:0;
-  	z-index:10;
-  	backdrop-filter:blur(.25em);
-	background-color: white;
 }
 
 header nav ul{
+	position: static;
+
 	margin: 0;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
 	padding: 0;
+	
+	background-color: var(--color-white);
 }
 
 header nav ul:first-of-type li:nth-of-type(2), nav ul:first-of-type li:nth-of-type(3){
@@ -111,17 +135,17 @@ header nav ul:first-of-type li:nth-of-type(2), nav ul:first-of-type li:nth-of-ty
 
 header nav ul img{
 	right: auto;
-
 }
 
 
 header nav ul:nth-last-of-type(1){
 	justify-content: center;
+
 }
 
-/* nav ul:first-child{
-	justify-content: space-around;
-} */
+.psLogo {
+    width: 40px;
+}
 
 header nav ul:first-child li{
 	padding: 0;
@@ -135,18 +159,16 @@ header nav ul li{
 	padding: 0 1em 1em .5em;
 }
 
-
 header nav ul li a{
 	text-decoration: none;
 	color: var(--color-black);
 }
 
-header nav ul:first-of-type a {
+header nav ul:first-of-type li:last-of-type a {
 	color: var(--color-white);
 	background-color: var(--color-button);
 	padding: .5em 1em;
 	border-radius: 1em;
-	margin-right: .3em;
 }
 
 header section img:first-of-type{
@@ -157,16 +179,58 @@ p {
 	font-family: SST-RomanLight, "Arial";
 }
 
-header section {
-	display: grid;
-}
-
 header div{
 	background-color: var(--color-button-balk);
 	color: var(--color-white);
 	height: auto;
 	padding-bottom: 3em;
 }
+
+
+@media (min-width: 768px){
+
+header div p {
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+
+header div a{
+	font-size: 1.3em;
+	margin-top: 1em;
+}
+
+}
+
+@media (min-width: 1024px){
+
+header div{
+	display: grid;
+    grid-template-columns: (5, 1);
+    grid-template-rows: (5, 1);
+    gap: 0px;
+	padding-bottom: 0;
+	}
+
+header div p{
+	grid-column: 1 / 1;
+    grid-row: 3 / 4;
+	font-size: 1em;
+}
+
+header div a{
+	grid-column: 1 / 2 ;
+	grid-row: 4 / 5;
+
+}
+
+header div img{
+	grid-column: 1 / 5;
+	grid-row: 1 / 5;
+	content: url("../images/tlou2-remaster-desktop-ver.jpeg");
+	
+}
+}
+
 
 header p{
 	padding: 1em;
@@ -186,12 +250,44 @@ header a {
 	width:fit-content;
 }
 
-.storyTlou img{
-	z-index: -1;
-}
-
 header{
 	height: auto;
+}
+
+header button {
+    background: none;
+    border: none;
+}
+
+/* Hamburger Menu */
+
+header nav ul:nth-of-type(3){
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	
+	background-color: var(--color-white);
+
+	translate:-100% 0%;
+	transition: 300ms;
+}
+
+
+nav .toonMenu{
+	translate: 0% 0%;
+}
+
+
+/*section 1*/
+
+.storyTlou img{
+	z-index: -1;
 }
 
 
@@ -220,6 +316,27 @@ header{
 	top: 22em;
 }
 
+@media (min-width: 1024px){
+
+	.storyTlou{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: px;
+		grid-row-gap: 0px;	
+	}
+
+	.storyTlou h1, p{
+		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	.storyTlou img{
+		grid-area: 1 / 1 / 2 / 3; 
+		content: url("/images/tlou1-bridge-desktop-ver.jpeg");
+	}
+	
+
+}
 
 /*tweede section in de main*/
 
@@ -270,7 +387,7 @@ header{
 
 .discover article h3{
 	font-family: SST-Roman, "Arial" ;
-	font-size: 15.5px;
+	font-size: 1em;
 	padding-bottom: 2px;
 	padding-top: 2px;
 }
@@ -284,6 +401,21 @@ header{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
+@media (width: 1024px){
+
+	.discover{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.discover article{
+		width: 50%;
+	}
+
+}
+
 
 /* section 3: Meet the Cast */
 
@@ -985,30 +1117,6 @@ h1{
 	font-size: .8em;
 	text-align: end;
 }
-
-/*.instagram img:nth-of-type(1){
-	z-index: -1;
-	border: 10px solid var(--color-button-balk) ;
-	border-radius: 1em;
-}
-  
-.instagram img:nth-of-type(2){
-	position: absolute;
-	left: .6em;
-	top: 23em;
-}
-
-.instagram div p:first-of-type{
-	position: absolute;
-	top: 24em;
-	left: 4em;
-}
-
-.instagram div p:nth-last-of-type(1){
-	position: absolute;
-	top: 24.5em;
-	right: .7em;
-} */
 
 .instagram button{
 	border: none;
