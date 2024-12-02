@@ -103,11 +103,13 @@ header button {
 
 
 header nav{
-	position: sticky;
+	position: fixed;
   	top:0;
 	left: 0;
 	right: 0;
 	bottom: 0;
+	height: 200px;
+	z-index: 10;
 
 	display: flex;
 	align-items: center;
@@ -185,6 +187,7 @@ header div{
 	color: var(--color-white);
 	height: auto;
 	padding-bottom: 3em;
+	margin-top: 115px;
 }
 
 
