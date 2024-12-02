@@ -140,12 +140,6 @@ header nav ul img{
 	right: auto;
 }
 
-
-header nav ul:nth-last-of-type(1){
-	justify-content: center;
-
-}
-
 .psLogo {
     width: 40px;
 }
@@ -167,11 +161,12 @@ header nav ul li a{
 	color: var(--color-black);
 }
 
-header nav ul:first-of-type li:last-of-type a {
+header nav > ul:first-of-type li:last-of-type a {
 	color: var(--color-white);
 	background-color: var(--color-button);
 	padding: .5em 1em;
 	border-radius: 1em;
+	margin-right: .5em;
 }
 
 header section img:first-of-type{
@@ -264,7 +259,15 @@ header button {
 
 /* Hamburger Menu */
 
-header nav ul:nth-of-type(3){
+body {
+	overflow: auto; /* Standaard scrollen */
+  }
+  
+body.no-scroll {
+	overflow: hidden; /* Schakelt scrollen uit */
+  }
+
+header nav div ul{
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -281,6 +284,17 @@ header nav ul:nth-of-type(3){
 	transition: 300ms;
 }
 
+header nav div a{
+	display: flex;
+	width: 4em;
+	padding: 0;
+	padding-bottom: 1em;
+	padding-left: 1em;
+}
+
+header nav div img{
+	padding-right: 1.5em;
+}
 
 nav .toonMenu{
 	translate: 0% 0% !important;
@@ -288,6 +302,10 @@ nav .toonMenu{
 
 .knopjeSluit{
 	padding: 2em;
+}
+
+.knopjeSluit img{
+	width: 100%;
 }
 
 
