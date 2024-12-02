@@ -309,6 +309,7 @@ nav .toonMenu{
 }
 
 .storyTlou h1{
+	position: relative;
 	color: var(--color-white);
 	padding: 1.2em;
 
@@ -321,6 +322,7 @@ nav .toonMenu{
 }
 
 .storyTlou p{
+	position: relative;
 	color: var(--color-white);
 	padding: 2.5em;
 	font-size: 13px;
@@ -338,8 +340,16 @@ nav .toonMenu{
 		display: block;
 	}
 
+	.storyTlou p{
+		width: 55%;
+		font-size: 1em !important;
+		padding-top: 0;
+	}
 
-	
+	h1{
+		width: 55%;
+		padding-top: 1.3em;
+	}
 
 }
 
@@ -352,7 +362,17 @@ nav .toonMenu{
 }
 
 .discover > img:first-of-type{
+	display: block;
+	position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0;
+}
 
+.discover > img:first-of-type{
+	display: none;
 	position: absolute;
     left: 0;
     top: 0;
@@ -362,7 +382,7 @@ nav .toonMenu{
 }
 
 .discover div{
-
+	position: relative;
 	top: 10em;
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -377,19 +397,19 @@ nav .toonMenu{
 }
 
 .discover h2{
-
+	position: relative;
 	letter-spacing: 2px;
-	font-size: 3.3em;
+	font-size: 2em;
 	text-align: center;
-	z-index: 2 ;
+	z-index: 1;
 	
 	color: var(--color-white);
 
 }
 
 .discover article{
+	position: relative;
 	width: 70%;
-	min-width: 110px;
 	height: 100%;
 
 	margin: 1em;
@@ -431,6 +451,7 @@ nav .toonMenu{
 @media (min-width: 1024px){
 
 	.discover{
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -438,6 +459,7 @@ nav .toonMenu{
 	}
 
 	.discover article{
+		position: relative;
 		width: 25%;
 		padding: 1em;
 	}
@@ -449,10 +471,7 @@ nav .toonMenu{
 		text-align: center;
 	}
 
-	.discover > img:first-child{
-		content: url("./images/tlou-discover-desktop-ver.jpeg");
-	}
-
+	
 }
 
 
