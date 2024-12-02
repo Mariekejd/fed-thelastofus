@@ -103,7 +103,7 @@ header button {
 
 
 header nav{
-	position:sticky;
+	position: sticky;
   	top:0;
 	left: 0;
 	right: 0;
@@ -281,6 +281,10 @@ header nav ul:nth-of-type(3){
 
 nav .toonMenu{
 	translate: 0% 0% !important;
+}
+
+.knopjeSluit{
+	padding: 2em;
 }
 
 
