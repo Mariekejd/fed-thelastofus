@@ -352,7 +352,21 @@ nav .toonMenu{
 	height: 100%;
 }
 
+.discover div{
 
+	position: absolute;
+	top: 10em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+	max-height: 100%;
+	overflow-x: scroll;
+}
 
 .discover h2{
 	color: var(--color-white);
@@ -365,6 +379,9 @@ nav .toonMenu{
 }
 
 .discover article{
+	width: 70%;
+	min-width: 110px;
+	height: 100%;
 
 	margin: 1em;
 }
@@ -401,7 +418,32 @@ nav .toonMenu{
 	padding-bottom: 20px;
 }
 
+@media (min-width: 1024px){
 
+	.discover{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.discover article{
+		width: 25%;
+		padding: 1em;
+	}
+
+	.discover h2{
+		top: 2em;
+		left: 50%;  
+		transform: translateX(-50%); 
+		text-align: center;
+	}
+
+	.discover > img:first-child{
+		content: url("./images/tlou-discover-desktop-ver.jpeg");
+	}
+
+}
 
 
 /* section 3: Meet the Cast */
