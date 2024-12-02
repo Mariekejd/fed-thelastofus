@@ -125,7 +125,8 @@ header nav ul{
 	align-items: center;
 	width: 100%;
 	padding: 0;
-	
+	gap: 1em;
+
 	background-color: var(--color-white);
 }
 
@@ -156,7 +157,7 @@ header nav ul li{
 	list-style-type: none;
 	font-family: SST-Roman-Bold, "Arial";
 	font-size: .8em;
-	padding: 0 1em 1em .5em;
+	padding: .5em 0;
 }
 
 header nav ul li a{
@@ -228,9 +229,6 @@ header div img{
 	content: url("../images/tlou2-remaster-desktop-ver.jpeg");
 	
 }
-
-
-
 }
 
 
@@ -282,7 +280,7 @@ header nav ul:nth-of-type(3){
 
 
 nav .toonMenu{
-	translate: 0% 0%;
+	translate: 0% 0% !important;
 }
 
 
@@ -295,6 +293,7 @@ nav .toonMenu{
 
 .storyTlou{
 	position: relative;
+	background-color: var(--color-black);
 }
 
 .storyTlou h1{
@@ -324,8 +323,9 @@ nav .toonMenu{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 1fr;
-		grid-column-gap: px;
+		grid-column-gap: 0px;
 		grid-row-gap: 0px;	
+
 	}
 
 	.storyTlou h1, p{
@@ -334,7 +334,7 @@ nav .toonMenu{
 
 	.storyTlou img{
 		grid-area: 1 / 1 / 2 / 3; 
-		content: url("/images/tlou1-bridge-desktop-ver.jpeg");
+		content: url("../images/tlou1-bridge-desktop-ver.jpeg");
 	}
 	
 
@@ -345,12 +345,14 @@ nav .toonMenu{
 .discover {
 	position: relative;
 	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 	background-color: var(--color-button-balk);
 }
+
+.discover > img:first-of-type{
+	height: 100%;
+}
+
+
 
 .discover h2{
 	color: var(--color-white);
@@ -363,12 +365,8 @@ nav .toonMenu{
 }
 
 .discover article{
-	width: 70%;
-}
 
-.discover article:nth-of-type(1){
-	position: absolute;
-	top: 14em;
+	margin: 1em;
 }
 
 .discover article img{
@@ -403,33 +401,7 @@ nav .toonMenu{
 	padding-bottom: 20px;
 }
 
-@media (min-width: 1024px){
 
-	.discover{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	.discover article{
-		width: 25%;
-		padding: 1em;
-	}
-
-	.discover h2{
-		position: absolute;
-		top: 2em;
-		left: 50%;  
-		transform: translateX(-50%); 
-		text-align: center;
-	}
-
-	.discover > img:first-child{
-		content: url("./images/tlou-discover-desktop-ver.jpeg");
-	}
-
-}
 
 
 /* section 3: Meet the Cast */
@@ -725,6 +697,7 @@ nav .toonMenu{
 .tlouCommunity {
 	position: relative;
 	color: var(--color-background);
+	background-color: var(--color-button-balk);
 }
 
 .tlouCommunity img{
@@ -813,10 +786,24 @@ nav .toonMenu{
 
 /* tutorial volgen van css en details mogelijkheden*/
 .faq details{
+	list-style-type: none;
 	font-family: SST-RomanLight, "Arial";
 	padding: 1em;
 	list-style-type: none;
 }
+
+.faq summary{
+	list-style-type: "+";
+}
+
+
+@media (min-width: 1024px){
+
+
+	.faq img{
+		width: 40%;
+	}
+} 
 
 /* section 8: about naughty dog */
 
@@ -843,6 +830,32 @@ nav .toonMenu{
 	/* color link aanpassen */
 }
 
+@media (min-width: 1024px){
+
+	.about{
+		margin: 8em;
+		margin-bottom: 0;
+		margin-top: .3em;
+	}
+
+	.about h2{
+		font-size: 2em !important;
+	}
+
+	.about p{
+		font-size: .8em !important;
+	}
+
+	.about img{
+		width: 30%;
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+
+}
 
 /*****************/
 /* CSS Pagina 2 */
