@@ -286,56 +286,59 @@ nav .toonMenu{
 
 /*section 1*/
 
-.storyTlou img{
-	z-index: -1;
-}
-
-
 .storyTlou{
 	position: relative;
 	background-color: var(--color-black);
 }
 
-.storyTlou h1{
+.storyTlou img{
 	position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0;
+}
+
+.storyTlou img:nth-of-type(1){
+	display: block;
+}
+
+.storyTlou img:nth-of-type(2){
+	display: none;
+}
+
+.storyTlou h1{
 	color: var(--color-white);
 	padding: 1.2em;
-	top: 6em;
 
 	font-family: TlouRough, "Arial";
 	letter-spacing: 2px;
 
 	letter-spacing: 1.5px;
 	font-size: 1.8em;
+	z-index: 1;
 }
 
-.storyTlou p:nth-of-type(1){
-	position: absolute;
+.storyTlou p{
 	color: var(--color-white);
 	padding: 2.5em;
 	font-size: 13px;
-	top: 22em;
+
+	z-index: 1;
 }
 
 @media (min-width: 1024px){
 
-	.storyTlou{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 1fr;
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;	
-
+	.storyTlou img:nth-of-type(1){
+		display: none;
 	}
 
-	.storyTlou h1, p{
-		grid-area: 1 / 1 / 2 / 2;
+	.storyTlou img:nth-of-type(2){
+		display: block;
 	}
 
-	.storyTlou img{
-		grid-area: 1 / 1 / 2 / 3; 
-		content: url("../images/tlou1-bridge-desktop-ver.jpeg");
-	}
+
 	
 
 }
@@ -349,12 +352,17 @@ nav .toonMenu{
 }
 
 .discover > img:first-of-type{
-	height: 100%;
+
+	position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0;
 }
 
 .discover div{
 
-	position: absolute;
 	top: 10em;
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -369,13 +377,14 @@ nav .toonMenu{
 }
 
 .discover h2{
-	color: var(--color-white);
-	position: absolute;
-	top: 1em;
-	
+
 	letter-spacing: 2px;
 	font-size: 3.3em;
 	text-align: center;
+	z-index: 2 ;
+	
+	color: var(--color-white);
+
 }
 
 .discover article{
@@ -384,6 +393,7 @@ nav .toonMenu{
 	height: 100%;
 
 	margin: 1em;
+	z-index: 1;
 }
 
 .discover article img{
@@ -914,9 +924,6 @@ h1{
 	font-family: SST-RomanLight, "Arial";
 	padding: 0 .7em;
 	font-size: 2em;
-
-	position: absolute;
-	top: 10em;
 }
 
 .shop p, ul, li, form{
