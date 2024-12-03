@@ -526,6 +526,10 @@ nav .toonMenu{
 	align-items: center;
 }
 
+.cast article img{
+	background-color: rgb(0, 0, 0, .3);
+}
+
 .cast article h3{
 	font-family: Tlou, "Arial";
 	letter-spacing: 1.5px;
@@ -870,6 +874,9 @@ nav .toonMenu{
 	list-style-type: none;
 	font-family: SST-RomanLight, "Arial";
 	padding: 1em;
+	list-style-type: none;
+}
+.faq details ul{
 	list-style-type: none;
 }
 
