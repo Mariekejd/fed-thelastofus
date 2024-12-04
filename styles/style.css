@@ -188,43 +188,43 @@ header div{
 
 @media (min-width: 768px){
 
-header div p {
+header > div p {
 	font-size: 1.3em;
 	line-height: 1.3em;
 }
 
-header div a{
+header > div a{
 	font-size: .9em;
-	margin-top: 1em;
+	margin-top: .8em;
 	
 }
 }
 
 @media (min-width: 1024px){
 
-header div{
+header > div{
 	display: grid;
     grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	padding-bottom: 0;
 	}
 
-header div p{
+header > div p{
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
 	font-size: 1em;
 }
 
-header div a{
+header > div a{
 	grid-column: 1 / 3;
 	grid-row: 4 / 5 ;
-	margin-top: 3em;
+	margin-top: 1em;
 
 }
 
-header div img{
+header > div img{
 	grid-area: 1 / 1 / 6 / 3;
-	content: url("../images/tlou2-remaster-desktop-ver.jpeg");
+	content: url("/fed-thelastofus/images/tlou2-remaster-desktop-ver.jpeg");
 	
 }
 }
@@ -267,7 +267,7 @@ body.no-scroll {
 	overflow: hidden; /* Schakelt scrollen uit */
   }
 
-header nav div ul{
+header nav div:nth-of-type(1) ul{
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -284,7 +284,7 @@ header nav div ul{
 	transition: 300ms;
 }
 
-header nav div a{
+header nav div:nth-of-type(1) a{
 	display: flex;
 	width: 4em;
 	padding: 0;
@@ -292,7 +292,7 @@ header nav div a{
 	padding-left: 1em;
 }
 
-header nav div img{
+header nav div:nth-of-type(1) img{
 	padding-right: 1.5em;
 }
 
@@ -367,7 +367,7 @@ nav .toonMenu{
 
 	.storyTlou p{
 		width: 55%;
-		font-size: 1em !important;
+		font-size: 1em;
 		padding-top: 0;
 	}
 
@@ -508,6 +508,36 @@ nav .toonMenu{
 	top: 0;
 	left: 0;
 	height: 100%;
+}
+
+.cast dialog {
+	/* width: 500px; */
+	margin: auto;
+	padding: 1em;
+	border: none;
+	background-color: var(--color-black);
+}
+
+
+.cast dialog button{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	padding: .5em;
+	border-radius: 2.5em;
+	border: none;
+}
+
+.cast dialog::backdrop{
+	backdrop-filter: blur(10px);
+}
+
+.cast dialog h3{
+	color: var(--color-white);
+	font-family: Tlou, "Arial";
+	letter-spacing: 1.5px;
+	font-size: 2em;
+	color: var(--color-white);
 }
 
 
@@ -765,7 +795,7 @@ nav .toonMenu{
 @media (min-width: 1024px){
 	
 	.tlouNews p{
-		font-size: 1em !important;
+		font-size: 1em;
 	}
 
 	.tlouNews p:nth-of-type(1){
@@ -777,7 +807,7 @@ nav .toonMenu{
 	}
 
 	.tlouNews h3{
-		font-size: 1.5em !important;
+		font-size: 1.5em;
 		grid-row: 1 / 2 ;
 	}
 }
@@ -1033,7 +1063,6 @@ h1{
 .shop ul li{
 	padding-bottom: .8em;
 }
-
 .shop p:nth-of-type(4), .shop p:nth-of-type(5),.shop p:nth-of-type(6){
 	padding-left: 1.5em;
 	font-size: .8em;
