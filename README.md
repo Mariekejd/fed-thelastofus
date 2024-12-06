@@ -246,9 +246,9 @@ Vragen:
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   -> Sections en articles hoeven niet te beginnen met header
-  -> Geen br gebruiken!! Verschillende p elementen toepassen en marging gebruiken!
+  -> Geen br gebruiken!! Verschillende p elementen toepassen en margin gebruiken! 
   -> hamburger menu en dialog zijn genoeg qua interacties!
-  -> transform Y gebruiken op sluit knop -> dialog
+  -> transform Y gebruiken op sluit knop -> dialog (overflow: show)
   -> toegankelijkheids test even iets meer voorbeelden geven
   -> gebruik active states voor buttons en section meet the cast! (hoeft nie verder uitgewerkt)
   -> zo min mogelijk media queries -> maak gebruik van grid auto fit 
@@ -258,7 +258,7 @@ Vragen:
 
   andere to-do's:
   - hover states niet vergeten!
-  - Faq details op leuken
+  - Faq details opleuken
   - footer responsive!
   - dialogs toevoegen!
   - nav fixen tweede pagina
