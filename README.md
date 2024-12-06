@@ -121,7 +121,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Over het algemeen ging het goed met html opzetten van de pagina's. Ik merkte wel in het gesprek dat
+  ik soms slordigheids foutjes maakte zoals het vergeten van de header in de body plaatsen. Maar als je het mij vraagt komt dit vooral doordat ik weer even moest opstarten met code. 
+
+  <img src="readme-images/html-nav.png" width="375px" alt="screenshot navigatie code">
+
+  Ook heb ik een paar tips gekregen over hoe ik mijn navigatie kan aanpakken en heb ik dit gelijk toegpast. Namelijk meerdere ul's gebruiken in de navigatie. 
 
 
   ### Agenda voor meeting
@@ -202,6 +207,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  
+
 </details>
 
 
@@ -225,6 +232,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+Vragen:
+  -> section en articles beginnen met heading & switchen met order??
+  -> kan ik < br > gebruiken?
+  -> hamburger en dialog genoeg aan micro-interactions?
+  -> language reader niet correct?
+  -> div gebruiken om de dialog om sluit knopje er boven te zetten? Is dit responsief lie?
 
 
   ### Verslag van meeting

@@ -312,10 +312,10 @@ nav .toonMenu{
 /*section 1*/
 
 .storyTlou{
-	position: relative;
-	background-color: var(--color-black);
+	background-image: url(../images/tlou1-franchise-hub-background-block-mobile.jpg);
+	background-size: cover;
 }
-
+/* 
 .storyTlou img{
 	position: absolute;
     left: 0;
@@ -323,15 +323,8 @@ nav .toonMenu{
     object-fit: cover;
     width: 100%;
     z-index: 0;
-}
+} */
 
-.storyTlou img:nth-of-type(1){
-	display: block;
-}
-
-.storyTlou img:nth-of-type(2){
-	display: none;
-}
 
 .storyTlou h1{
 	position: relative;
@@ -357,13 +350,11 @@ nav .toonMenu{
 
 @media (min-width: 1024px){
 
-	.storyTlou img:nth-of-type(1){
-		display: none;
+	.storyTlou{
+		background-image: url(../images/tlou1-bridge-desktop-ver.jpeg);
+		background-size: cover;
 	}
 
-	.storyTlou img:nth-of-type(2){
-		display: block;
-	}
 
 	.storyTlou p{
 		width: 55%;
@@ -381,34 +372,14 @@ nav .toonMenu{
 /*tweede section in de main*/
 
 .discover {
-	position: relative;
-	background-color: var(--color-button-balk);
 	overflow: hidden;
 	padding: 3em 1em; 
+	background-image: url(../images/background-games-articles.jpeg);
+	background-size: cover;
 }
 
-.discover > img:first-of-type{
-	display: block;
-	position: absolute;
-    left: 0;
-    top: 0;
-    object-fit: cover;
-    width: 100%;
-    z-index: 0;
-}
-
-.discover > img:nth-of-type(2){
-	display: none;
-	position: absolute;
-    left: 0;
-    top: 0;
-    object-fit: cover;
-    width: 100%;
-    z-index: 0;
-}
 
 .discover div{
-	position: relative;
 	
 	display: flex;
 	flex-direction: row;
@@ -421,7 +392,7 @@ nav .toonMenu{
 	letter-spacing: 2px;
 	font-size: 2em;
 	text-align: center;
-	z-index: 1;
+	
 	
 	color: var(--color-white);
 
@@ -429,7 +400,7 @@ nav .toonMenu{
 
 .discover article{
 	margin: 1em;
-	z-index: 1;
+	
 }
 
 .discover article img{
@@ -471,14 +442,15 @@ nav .toonMenu{
 @media (min-width: 1024px){
 
 	.discover{
-		position: relative;
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
+
+		background-image: url(../images/tlou-background-game-articles.jpeg);
+		background-size: cover;
 	}
 
 	.discover article{
-		position: relative;
 		width: 25%;
 		padding: 1em;
 	}
@@ -499,16 +471,11 @@ nav .toonMenu{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	background-image: url(../images/background-meet-the-cast.jpeg);
+	background-size: cover;
 }
 
-
-.cast > img:nth-of-type(1){
-	z-index: -1;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-}
 
 .cast dialog {
 	/* width: 500px; */
@@ -815,9 +782,11 @@ nav .toonMenu{
 /* section 6: Tlou community */
 
 .tlouCommunity {
-	position: relative;
 	color: var(--color-background);
-	background-color: var(--color-button-balk);
+	background-image: url(../images/tlou-community-mobile-ver.jpeg);
+	background-size: cover;
+
+
 	display: flex;
 	gap: 1em;
 	flex-direction: column;
@@ -825,32 +794,13 @@ nav .toonMenu{
 	overflow: hidden;
 }
 
-.tlouCommunity img{
-	z-index: 0;
-	position: absolute;
-	left: 0;
-	top: 0;
-	object-fit: cover;
-	width: 100%;
-}
-
-.tlouCommunity img:nth-of-type(1){
-	display: block;
-}
-
-.tlouCommunity img:nth-of-type(2){
-	display: none;
-}
-
 .tlouCommunity h2{
 	letter-spacing: 2px;
 	color: var(--color-white);
-	z-index: 1;
 }
 
 .tlouCommunity p{
 	font-size: 14px;
-	z-index: 1;
 }
 
 .tlouCommunity button{
@@ -860,7 +810,6 @@ nav .toonMenu{
 	padding: .8em 1.8em;
 	font-family: SST-Roman-bold, "Arial";
 	border: none;
-	z-index: 1;
 	width:fit-content;
 }
 
@@ -868,6 +817,8 @@ nav .toonMenu{
 
 	.tlouCommunity{
 		padding: 5em 5em;
+		background-image: url(../images/tlou-community-desktop-ver.jpeg);
+		background-size: cover;
 	}
 
 	.tlouCommunity img:nth-of-type(1){
@@ -983,6 +934,9 @@ nav .toonMenu{
 .shop {
 	background-color: var(--color-button-balk);
 	position: relative;
+	margin-top: 6em;
+	display: flex;
+	flex-direction: column;
 }
 
 h1{
@@ -1018,15 +972,14 @@ h1{
 	padding: 0;
 	font-size: .8em;
 	
-}
-
-.shop img:first-of-type{
-	z-index: -1;
-}
+}	
 
 .shop form{
 	padding: 1em;
 	padding-left: 1.3em;
+}
+.shop form > * {
+	margin-bottom: 1em;
 }
 
 .shop button:nth-of-type(1){
@@ -1042,16 +995,27 @@ h1{
 }
 
 .shop button:nth-of-type(2){
+
+	width: 15%;
 	background-color: var(--color-gray);
 	color: var(--color-white);
-	padding: .7em 1em ;
-	border-radius: 1.3em;
+	padding:.5em 0;
+	border-radius: 3em;
 	border: none;
 
 	font-family: SST-Roman-Medium, "Arial";
 	margin-bottom: 1em;
-	margin-left: .6em;
+	margin-left: 1em;
 
+}
+
+.shop button:nth-of-type(2) img{
+	width: 30%;
+}
+
+.shop ul li img{
+	width: 10%;
+	padding-right: 1em;
 }
 
 .shop ul{
@@ -1077,23 +1041,23 @@ h1{
 	transform: scale(1.04);
 }
 
+.shop > p:last-of-type img{
+	width: 10%;
+	padding-right: .3em;
+}
+
 
 /*section 2 */
 
 .remasterTlou2{
 	position: relative;
+
+	background-image: url(../images/tlou2-background-img-1.jpg);
+	background-size: cover;
+	background-position: 35% 0;
+
 }
 
-
-.remasterTlou2 img{
-	z-index: -1;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	object-fit: cover;
-	filter: brightness(45%);
-}
 
 .remasterTlou2 h2{
 	color: var(--color-white);
@@ -1318,7 +1282,8 @@ h1{
 	padding: .5em 1em;
 	font-size: .8em;
 	border-radius: 1em;
-	
+	display: block;
+	width: fit-content;
 }
 
 .discoverTlou1 a:nth-of-type(2){
