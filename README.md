@@ -245,11 +245,11 @@ Vragen:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  -> Sections en articles hoeven niet te beginnen met header
-  -> Geen br gebruiken!! Verschillende p elementen toepassen en margin gebruiken! 
-  -> hamburger menu en dialog zijn genoeg qua interacties!
+  -> Sections en articles hoeven niet te beginnen met header (DONE)
+  -> Geen br gebruiken!! Verschillende p elementen toepassen en margin gebruiken! (DONE)
+  -> hamburger menu en dialog zijn genoeg qua interacties! (DONE)
   -> transform Y gebruiken op sluit knop -> dialog (overflow: show)
-  -> toegankelijkheids test even iets meer voorbeelden geven
+  -> toegankelijkheids test even iets meer voorbeelden geven 
   -> gebruik active states voor buttons en section meet the cast! (hoeft nie verder uitgewerkt)
   -> zo min mogelijk media queries -> maak gebruik van grid auto fit 
   -> picture element gebruiken voor verschillende images op verschillende widths 
@@ -257,12 +257,15 @@ Vragen:
   -> Screenshots toegankelijkheid toevoegen in proces verslag!
 
   andere to-do's:
-  - hover states niet vergeten!
-  - Faq details opleuken
-  - footer responsive!
-  - dialogs toevoegen!
+  - hover states niet vergeten! (halfway)
+  - Faq details opleuken (DONE)
+  - footer responsive! (DONE)
+  - dialogs toevoegen! (DONE)
+  - 
+  
   - nav fixen tweede pagina
   - Darkmode!!!
+  - responsive 2de pagina
 
 
 
