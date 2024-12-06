@@ -207,7 +207,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  
+
 
 </details>
 
@@ -238,7 +238,8 @@ Vragen:
   -> kan ik < br > gebruiken?
   -> hamburger en dialog genoeg aan micro-interactions?
   -> language reader niet correct?
-  -> div gebruiken om de dialog om sluit knopje er boven te zetten? Is dit responsief lie?
+  -> div gebruiken om de dialog om sluit knopje er boven te zetten? Is dit responsief lief?
+  -> is mijn toegankelijkheids test uitgebreid genoeg (?)
 
 
   ### Verslag van meeting
