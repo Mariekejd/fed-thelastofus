@@ -65,6 +65,23 @@
 
 }
 
+/*@media (prefers-color-scheme: dark) {
+	:root {
+		--color-black:#ffffff;
+		--color-white:#000000;
+		--color-footer: #00439B;
+		--color-button: #0070CB;
+		--color-button-balk: #1A1B1D;
+		--color-gray: #757575;
+		--color-button-red: #D53C02;
+		--color-text-yellow: #FCC71B;
+		--color-text-blue: #53B1FF;
+		--color-blue-gray: #252E32;
+		--color-faq-gray: #363636;
+		--color-font-gray: #B2B2B2;
+	} */
+	
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -259,6 +276,10 @@ header button {
 }
 
 /* Hamburger Menu */
+
+.burgerKnop{
+	display: block;
+}
 
 body {
 	overflow: auto; /* Standaard scrollen */
@@ -1143,7 +1164,7 @@ h1{
 	padding: .5em 0;
 	border-radius: 3em;
   }
-
+   
 
   @media (min-width: 1024px){
 
@@ -1155,14 +1176,10 @@ h1{
 		padding-left: 5em;
 	}
 
-	.shop div:nth-of-type(2){
-		display: grid;
-		display: grid;
-  		grid-template-columns: 1fr 1fr 0.5fr 1fr; 
-  		grid-template-rows: 1fr 1fr 0.2fr; 
-  		gap: 1em; 
+	.shop div{
+		display: flex;
+		flex-direction: row;
 	}
-	
 
 	.shop > img:nth-of-type(1){
 		display: none;
@@ -1176,18 +1193,22 @@ h1{
 		width: 600px;
 	}
 
-	.shop div > ul:nth-of-type(1){
-		grid-area: 1 / 1 / 4 / 2;
+	.shop div ul{
+		padding: 1em;
+		max-width: 300px;
+	}
+	.shop div ul li img{
+		width: 20%;
 	}
 
-	.shop div > p ul:nth-of-type(2){
-		grid-column: 2 / 3;
-		grid-row: 1 / 4;
+	.shop > p:last-of-type{
+		position: absolute;
+		padding: 0 10em;
+		top: 50em;
+		left: 40em;
+		font-size: .8em !important;
 	}
 
-	.shop div > p:last-of-type{
-		grid-area: 3 / 4 / 4 / 5;
-	}
   }
   
 
