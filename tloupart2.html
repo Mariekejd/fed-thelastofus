@@ -1,467 +1,734 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Last of Us Part II Remastered</title>
-    
+
     <link href="styles/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="./images/ps-logo-bw.jpeg"/>
-</head>
+    <link rel="icon" type="image/svg+xml" href="./images/ps-logo-bw.jpeg" />
+  </head>
 
-<body>
-  
-  <header>
-   
-    <nav>
-      <ul>
-        <li><button class="burgerKnop"><img src="./images/hamburger-icon.svg" alt="hamburger icon"></button></li>
-        <li><button><img src="./images/search-icon.svg" alt="search icon"></button></li>
-    
-        <li><img class="psLogo" src="./images/ps-logo-blue.png" alt="playstation blue logo"></li>
-        
-        <li><a href="#">Sign in</a></li>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <button class="burgerKnop">
+              <img src="./images/hamburger-icon.svg" alt="hamburger icon" />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img src="./images/search-icon.svg" alt="search icon" />
+            </button>
+          </li>
 
-      </ul>
-         <!--Nav met 2 ul, plaatje, zoekbalk en hamburger menu-->
-      <ul>
+          <li>
+            <img
+              class="psLogo"
+              src="./images/ps-logo-blue.png"
+              alt="playstation blue logo"
+            />
+          </li>
+
+          <li><a href="#">Sign in</a></li>
+        </ul>
+        <!--Nav met 2 ul, plaatje, zoekbalk en hamburger menu-->
+        <ul>
           <li><a href="#">The Last of Us Part II Remastered</a></li>
           <li><a href="#">No Return</a></li>
-      </ul>
-      
+        </ul>
+
+        <div>
+          <ul>
+            <li>
+              <button class="knopjeSluit">
+                <img
+                  src="./images/hamburger-cancelbtn.svg"
+                  alt="cancel button"
+                />
+              </button>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/game-icon.svg" alt="icon" />Games</a
+              >
+            </li>
+            <li>
+              <a href="#"><img src="./images/ps5-icon.svg" alt="icon" />PS5</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/ps4-console-icon.svg" alt="icon" />PS4</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/services-icon.svg" alt="icon" />Services</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/accessoires-icon.svg"
+                  alt="icon"
+                />Accessories</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/news-icon.svg" alt="icon" />News</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/shop-icon.svg" alt="icon" />Store</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/support-icon.svg" alt="icon" />Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shop">
+        <img
+          src="./images/tlou-remaster-mobile-ver.jpeg"
+          alt="the last of us part 2 remastered"
+        />
+
+        <h1>The Last of Us Part II Remastered</h1>
+        <p>Sony Interactive Entertainment</p>
+
+        <p>Available on PS5</p>
+        <!--PS5 border lines geven in css-->
+        <p>
+          4.47 <img src="./images/stars-icon.svg" alt="rating stars" />199.4K
+          ratings
+        </p>
+        <!--sterretjes tussen-->
+
+        <form>
+          <input type="radio" name="gameOption" value="purchase" />
+          <label>39.99 $49.99 </label>
+          <p>Save 20%</p>
+          <p>Offer ends 12/3/2024 08:59 CET</p>
+
+          <input type="radio" name="gameOption" value="trial" />
+          <label>Game Trial</label>
+          <p>
+            Subscribe to PlayStation Plus Premium to play a 2-hour full game
+            trial
+          </p>
+        </form>
+
+        <div>
+          <button>Add to Cart</button>
+          <button>
+            <img src="./images/heart-icon.svg" alt="favorites icon" />
+          </button>
+        </div>
+
+        <p>Released <time>01/19/2024</time></p>
+        <!--img-->
     <div>
-      <ul>
-        <li><button class="knopjeSluit"><img src="./images/hamburger-cancelbtn.svg" alt="cancel button"></button></li>
-        <li><a href="#"><img src="./images/game-icon.svg" alt="icon">Games</a></li>
-        <li><a href="#"><img src="./images/ps5-icon.svg" alt="icon">PS5</a></li>
-        <li><a href="#"><img src="./images/ps4-console-icon.svg" alt="icon">PS4</a></li>
-        <li><a href="#"><img src="./images/services-icon.svg" alt="icon">Services</a></li>
-        <li><a href="#"><img src="./images/accessoires-icon.svg" alt="icon">Accessories</a></li>
-        <li><a href="#"><img src="./images/news-icon.svg" alt="icon">News</a></li>
-        <li><a href="#"><img src="./images/shop-icon.svg" alt="icon">Store</a></li>
-        <li><a href="#"><img src="./images/support-icon.svg" alt="icon">Support</a></li>
-      </ul> 
-    </div>
-    
-  </nav>
+        <ul>
+          <li>
+            <img src="./images/offline-icon.svg" alt="offline icon" />Offline
+            play enabled
+          </li>
+          <li>
+            <img src="./images/person-icon.svg" alt="person icon" />1 player
+          </li>
+          <li>
+            <img src="./images/remote-icon.svg" alt="remote icon" />Remote Play
+            supported
+          </li>
+        </ul>
 
-</header>
+        <p>PS5 Version</p>
+        <ul>
+          <li>
+            <img
+              src="./images/vibration-icon.svg"
+              alt="two remote icons"
+            />Vibration function and trigger effect supported (DualSense
+            wireless controller)
+          </li>
+          <li>
+            <img src="./images/ps5-white-icon.svg" alt="ps5 icon" />Game Help
+            supported
+          </li>
+          <li>
+            <img src="./images/ps-cloud-icon.svg" alt="cloud ps icon" />PS5 game
+            streaming supported only with Premium subscription
+          </li>
+        </ul>
 
-<main>
-  <section class="shop">
-
-    <img src="./images/tlou-remaster-mobile-ver.jpeg" alt="the last of us part 2 remastered">
-
-    <h1>The Last of Us Part II Remastered</h1>
-    <p>Sony Interactive Entertainment</p>
-
-    <p>Available on PS5</p> <!--PS5 border lines geven in css-->
-    <p>4.47 <img src="./images/stars-icon.svg" alt="rating stars">199.4K ratings</p> <!--sterretjes tussen-->
-
-
-    <form>
-      <input type="radio" name="gameOption" value="purchase">
-        <label>39.99 $49.99 </label>
-        <p>Save 20%</p>
-        <p>Offer ends 12/3/2024 08:59 CET</p>
-  
-        <input type="radio" name="gameOption" value="trial">
-        <label>Game Trial</label>
-        <p>Subscribe to PlayStation Plus Premium to play a 2-hour full game trial</p>
-    </form>
-
-  <div>
-    <button>Add to Cart</button>
-    <button><img src="./images/heart-icon.svg" alt="favorites icon"></button>
+        <p>
+          <img src="./images/warning.jpeg" alt="warning image" />Blood and Gore,
+          Intense Violence, Nudity, Sexual Content, Strong Language, Use of
+          Drugs
+        </p>
   </div>
+        <figure>
+          <a href="https://youtu.be/-llaUBqovHw?si=4balxPZdLDZebcok"
+            ><img
+              src="./images/tlou2-remastered-yt-thumbnail.jpeg"
+              alt="youtube thumbnail"
+          /></a>
+        </figure>
+      </section>
 
-    <p>Released <time>01/19/2024</time></p>
-<!--img-->
+      <section class="remasterTlou2">
+        <p>What is The Last of Us Part II Remastered?</p>
+        <h2>
+          EXPERIENCE ELLIE AND ABBY'S EMOTIONAL JOURNEYS, REMASTERED FOR PS5
+        </h2>
+        <p>
+          Play the winner of over 300 Game of the Year awards, remastered for
+          the PlayStation®5 console. Relive or play for the first time Ellie and
+          Abby’s story, now with graphical enhancements, new gameplay modes like
+          the roguelike survival experience No Return, full DualSense® wireless
+          controller integration, and more.
+        </p>
+        <p>
+          Five years after their dangerous journey across the post-pandemic
+          United States, Ellie and Joel have settled down in Jackson, Wyoming.
+          Living amongst a thriving community of survivors has allowed them
+          peace and stability, despite the constant threat of the infected and
+          other, more desperate survivors. When a violent event disrupts that
+          peace, Ellie embarks on a relentless journey to carry out justice and
+          find closure.
+        </p>
+      </section>
 
-    <ul>
-      <li><img src="./images/offline-icon.svg" alt="offline icon">Offline play enabled</li>
-      <li> <img src="./images/person-icon.svg" alt="person icon">1 player</li>
-      <li> <img src="./images/remote-icon.svg" alt="remote icon">Remote Play supported</li>
-    </ul>
+      <section class="features">
+        <h2>THE LAST OF US PART II REMASTERED KEY FEATURES</h2>
+        <!--miss is dit geen p maar een onderschrift-->
+        <p>
+          Experience an array of technical enhancements that make The Last of Us
+          Part II Remastered the definitive way to play Ellie and Abby’s
+          critically acclaimed story.
+        </p>
 
-    <p>PS5 Version</p>
-    <ul>
-      <li><img src="./images/vibration-icon.svg" alt="two remote icons">Vibration function and trigger effect supported (DualSense wireless controller)</li>
-      <li><img src="./images/ps5-white-icon.svg" alt="ps5 icon">Game Help supported</li>
-      <li> <img src="./images/ps-cloud-icon.svg" alt="cloud ps icon">PS5 game streaming supported only with Premium subscription</li>
-    </ul>
+        <article>
+          <img
+            src="./images/tlou2-horseback.jpeg"
+            alt="screenshot gameplay Ellie & Dina tlou2-horseback"
+          />
+          <h3>Native PS5 enhancements</h3>
+          <p>
+            Built for the PS5, The Last of Us Part II Remastered enhances the
+            original PS4 game in ways not possible before. Visual performance
+            now includes native 4K1 output in Fidelity Mode, 1440p upscaled to
+            4K in Performance Mode, and an Unlocked Framerate option for TVs
+            that support VRR. The Last of Us Part II Remastered also includes
+            improved load times to let you jump right back into the action.
+            Descriptive Audio and Speech to Vibrations have also been added to
+            The Last of Us Part II Remastered's suite of accessibility features.
+          </p>
+        </article>
 
-    <p> <img src="./images/warning.jpeg" alt="warning image">Blood and Gore, Intense Violence, Nudity, Sexual Content, Strong Language, Use of Drugs</p>
+        <article>
+          <img
+            src="./images/tlou2-no-return.jpeg"
+            alt="screenshot gameplay no-return"
+          />
+          <h3>No Return – A roguelike survival mode</h3>
+          <p>
+            Experience deep combat via an entirely new mode! Survive as long as
+            you can in each run as you choose your path through a series of
+            randomized encounters featuring different foes and memorable
+            locations from throughout The Last of Us Part II, all culminating in
+            tense boss battles.
+          </p>
+          <p>
+            Unique gameplay modifiers can offer new and unexpected challenges as
+            you fight to succeed – and survive – in a host of different
+            encounter types. Play as a variety of characters including
+            never-before-playable characters like Dina, Jesse, Lev, Tommy and
+            more,2 each with unique traits to offer different playstyles, and
+            unlock skins for them as you progress to use in the mode. Find out
+            more about No Return.
+          </p>
+        </article>
 
+        <article>
+          <img
+            src="./images/tlou2-guitarplay.jpeg"
+            alt="screenshot gameplay guitar play"
+          />
+          <h3>New ways to play</h3>
+          <p>
+            Delve deeper into this beloved adventure and learn how the original
+            game was created. Lost Levels let you explore early-development
+            versions of three new levels not seen in the original The Last of Us
+            Part II: Sewers, Jackson Party and Boar Hunt. Enjoy hours of new
+            developer commentary about The Last of Us Part II’s development as
+            you experience the game.
+          </p>
+          <p>
+            Live up to your musical potential with Guitar Free Play, which
+            includes new instruments2, or take on the new Speedrun Mode2 and
+            post your best times. Take incredible Photo Mode shots with
+            additions like dynamic lighting, Frame Forward, and Gaze Direction,
+            as well as new frame and logo options.
+          </p>
+          <p>
+            The Last of Us Part II Remastered also features brand new unlockable
+            character and weapon skins for players to use for both Ellie and
+            Abby.
+          </p>
+        </article>
 
-    <figure>
-      <a href="https://youtu.be/-llaUBqovHw?si=4balxPZdLDZebcok"><img src="./images/tlou2-remastered-yt-thumbnail.jpeg" alt="youtube thumbnail"></a>
-    </figure> 
+        <article>
+          <img
+            src="./images/tlou2-snow-horseback.jpeg"
+            alt="screenshot gameplay scene in snow"
+          />
+          <h3>
+            Graphical improvements and full DualSense® wireless controller
+            support
+          </h3>
+          <p>
+            The beautiful yet dangerous world of The Last of Us Part II
+            Remastered is brought to new life on the PS5. This version features
+            increased texture resolution, increased Level-of-Detail distances,
+            improved shadow quality, animation sampling rate, and more. The Last
+            of Us Part II Remastered also makes full use of the DualSense
+            wireless controller's haptic feedback and adaptive triggers to allow
+            every weapon to feel distinct and convey an increased sense of
+            presence in your surroundings as you explore the snowy mountains of
+            Jackson and the rain-drenched city streets of Seattle.
+          </p>
 
-  </section>
+          
+        </article>
 
-  <section class="remasterTlou2">
+        <p>14K requires 4K display.</p>
+        <p>2 Game progression required to unlock.</p>
+      </section>
 
-    <p>What is The Last of Us Part II Remastered?</p>
-    <h2>EXPERIENCE ELLIE AND ABBY'S EMOTIONAL JOURNEYS, REMASTERED FOR PS5</h2>
-    <p>Play the winner of over 300 Game of the Year awards, remastered for the PlayStation®5 console. Relive or play for the first time Ellie and Abby’s story, now with graphical enhancements, new gameplay modes like the roguelike survival experience No Return, full DualSense® wireless controller integration, and more.</p>
-    <p>Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving community of survivors has allowed them peace and stability, despite the constant threat of the infected and other, more desperate survivors. When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry out justice and find closure.</p>
-
-  </section>
- 
-  <section class="features">
-    <h2>THE LAST OF US PART II REMASTERED KEY FEATURES</h2>
-    <!--miss is dit geen p maar een onderschrift-->
-    <p>Experience an array of technical enhancements that make The Last of Us Part II Remastered the definitive way to play Ellie and Abby’s critically acclaimed story.</p> 
+      <section class="upgrade">
+        <h2>UPGRADE TO THE PS5 REMASTERED</h2>
     
-    <img src="./images/tlou2-horseback.jpeg" alt="screenshot gameplay Ellie & Dina tlou2-horseback">
-    <h3>Native PS5 enhancements</h3>
-    
-    <p>Built for the PS5, The Last of Us Part II Remastered enhances the original PS4 game in ways not possible before. Visual performance now includes native 4K1 output in Fidelity Mode, 1440p upscaled to 4K in Performance Mode, and an Unlocked Framerate option for TVs that support VRR. The Last of Us Part II Remastered also includes improved load times to let you jump right back into the action. Descriptive Audio and Speech to Vibrations have also been added to The Last of Us Part II Remastered's suite of accessibility features.</p>
-    <img src="./images/tlou2-no-return.jpeg" alt="screenshot gameplay no-return">
-    <h3>No Return – A roguelike survival mode</h3>
-    <p>Experience deep combat via an entirely new mode! Survive as long as you can in each run as you choose your path through a series of randomized encounters featuring different foes and memorable locations from throughout The Last of Us Part II, all culminating in tense boss battles. </p>
-    <p>Unique gameplay modifiers can offer new and unexpected challenges as you fight to succeed – and survive – in a host of different encounter types. Play as a variety of characters including never-before-playable characters like Dina, Jesse, Lev, Tommy and more,2 each with unique traits to offer different playstyles, and unlock skins for them as you progress to use in the mode. Find out more about No Return. </p>
-    
-    <img src="./images/tlou2-guitarplay.jpeg" alt="screenshot gameplay guitar play">
-    <h3>New ways to play</h3>
-    
-    <p>Delve deeper into this beloved adventure and learn how the original game was created. Lost Levels let you explore early-development versions of three new levels not seen in the original The Last of Us Part II: Sewers, Jackson Party and Boar Hunt. Enjoy hours of new developer commentary about The Last of Us Part II’s development as you experience the game.</p>
-    <p>Live up to your musical potential with Guitar Free Play, which includes new instruments2, or take on the new Speedrun Mode2 and post your best times. Take incredible Photo Mode shots with additions like dynamic lighting, Frame Forward, and Gaze Direction, as well as new frame and logo options.</p>
-    <p>The Last of Us Part II Remastered also features brand new unlockable character and weapon skins for players to use for both Ellie and Abby.</p>
-    
-    <img src="./images/tlou2-snow-horseback.jpeg" alt="screenshot gameplay scene in snow">
-    <h3>Graphical improvements and full DualSense® wireless controller support</h3>
-    
-    <p>The beautiful yet dangerous world of The Last of Us Part II Remastered is brought to new life on the PS5. This version features increased texture resolution, increased Level-of-Detail distances, improved shadow quality, animation sampling rate, and more. The Last of Us Part II Remastered also makes full use of the DualSense wireless controller's haptic feedback and adaptive triggers to allow every weapon to feel distinct and convey an increased sense of presence in your surroundings as you explore the snowy mountains of Jackson and the rain-drenched city streets of Seattle.</p>
+        <img src="./images/tlou-upgrade-desktop.png" alt="upgrade to remastered">
 
-    <p>14K requires 4K display. </p>
-    <p>2Game progression required to unlock.</p>
+        <article>
+          <h3>PS5 features include:</h3>
+          <ul>
+            <li>Exclusive roguelike survival mode</li>
+            <li>Lost levels</li>
+            <li>Full DualSense® Wireless controller integration</li>
+            <li>New outfits</li>
+            <li>Guitar free play</li>
+            <li>Graphical enhancements</li>
+          </ul>
 
-  </section>
+          <img
+            src="./images/tlou2-no-return-remaster.jpeg"
+            alt="no return remastered logo"
+          />
+        </article>
 
-  <section class="upgrade">
-  
-    <h2>UPGRADE TO THE PS5 REMASTERED</h2>
-    <img src="./images/tlou2-remaster-upgrade.jpeg" alt="upgrade to remastered">
+        <p>
+          *Price shown in U.S. currency and may vary by country. Check PS Store
+          at launch on January 19, 2024 for local pricing. The upgrade will be
+          available starting at launch on January 19, 2024. Owners of PS4 disc
+          copies must insert them into the PS5 every time they want to download
+          or play the PS5 digital version. PS4 game disc owners who buy the PS5
+          Digital Edition disc-free console will not be able to get the PS5
+          version for the discounted price.
+        </p>
 
-  <article>
-    <h3>PS5 features include:</h3>
-    <ul>
-      <li>Exclusive roguelike survival mode</li>
-      <li>Lost levels</li>
-      <li>Full DualSense® Wireless controller integration</li>
-      <li>New outfits</li>
-      <li>Guitar free play</li>
-      <li>Graphical enhancements</li>
-    </ul>
+      <article>
+        <h3>How to upgrade</h3>
+        <p>
+          Players who purchased The Last of Us Part II have the option to pay an
+          additional fee to upgrade to The Last of Us Part II Remastered. The
+          upgrade, along with local upgrade pricing, will be available on the
+          PlayStation Store starting at launch on January 19, 2024.
+        </p>
+        <p>
+          Upgrades for disc copies of the PS4 version of The Last of Us Part II
+          are only available if you have a PlayStation®5 console with a disc
+          drive. Owners of PS4 disc copies must insert them into the PS5 every
+          time they want to download or play the PS5 digital version.
+        </p>
+      </article>
 
-    <img src="./images/tlou2-no-return-remaster.jpeg" alt="no return remastered logo">
-  </article>
+      </section>
 
-    <p>*Price shown in U.S. currency and may vary by country. Check PS Store at launch on January 19, 2024 for local pricing. The upgrade will be available starting at launch on January 19, 2024. Owners of PS4 disc copies must insert them into the PS5 every time they want to download or play the PS5 digital version. PS4 game disc owners who buy the PS5 Digital Edition disc-free console will not be able to get the PS5 version for the discounted price.</p>
+      <section class="gameNights">
+        <h2>THE LAST OF US PART II REMASTERED: GAME NIGHTS SERIES</h2>
+        <p>
+          Game Nights is a discussion series with special guests that unpacks
+          the complex characters, breathtaking story and riveting gameplay of
+          The Last of Us Part II Remastered experience.
+        </p>
 
-    <h3>How to upgrade</h3>
-    <p>Players who purchased The Last of Us Part II have the option to pay an additional fee to upgrade to The Last of Us Part II Remastered. The upgrade, along with local upgrade pricing, will be available on the PlayStation Store starting at launch on January 19, 2024. </p>
-    <p>Upgrades for disc copies of the PS4 version of The Last of Us Part II are only available if you have a PlayStation®5 console with a disc drive. Owners of PS4 disc copies must insert them into the PS5 every time they want to download or play the PS5 digital version. </p>
+        <figure>
+          <a href="https://youtu.be/exq5DRNoG28"
+            ><img
+              src="./images/tlou2-yt-thumbnail-gamenights.jpeg"
+              alt="youtube thumbnail"
+          /></a>
+          <p>Episode 1:</p>
+          <figcaption>
+            Naughty Dog’s Matthew Gallant reveals what’s behind The Last of Us
+            Part II Remastered.
+          </figcaption>
+        </figure>
 
-  </section>
+        <figure>
+          <a href="https://youtu.be/agNSTqeLA30"
+            ><img
+              src="./images/tlou2-yt-thumbnail-gamenights2.jpeg"
+              alt="youtube thumbnail"
+          /></a>
+          <p>Episode 2:</p>
+          <figcaption>
+            Clinical Therapist Shani Tran breaks down the unforgettable
+            characters from The Last of Us Part II Remastered.
+          </figcaption>
+        </figure>
 
-  <section class="gameNights">
-    <h2>THE LAST OF US PART II REMASTERED: GAME NIGHTS SERIES</h2>
-    <p>Game Nights is a discussion series with special guests that unpacks the complex characters, breathtaking story and riveting gameplay of The Last of Us Part II Remastered experience.</p>
+        <figure>
+          <a href="https://youtu.be/08E-E2kGKIA"
+            ><img
+              src="./images/tlou2-yt-gamenights3.jpeg"
+              alt="youtube thumbnail"
+          /></a>
+          <p>Episode 3:</p>
+          <figcaption>
+            Gaming Analyst Andrea Rene explores the immersive cinematic quality
+            and must-play story of The Last of Us Part II Remastered.
+          </figcaption>
+        </figure>
+      </section>
 
-    <figure>
-      <a href="https://youtu.be/exq5DRNoG28"
-        ><img src="./images/tlou2-yt-thumbnail-gamenights.jpeg" alt="youtube thumbnail"></a
-      >
-      <p>Episode 1:</p>
-      <figcaption>
-      Naughty Dog’s Matthew Gallant reveals what’s behind The Last of Us Part II Remastered.
-      </figcaption>
-    </figure>
+      <section class="discoverTlou1">
+        <div>
+          <h2>DISCOVER THE LAST OF US</h2>
 
-    <figure>
-      <a href="https://youtu.be/agNSTqeLA30"
-        ><img src="./images/tlou2-yt-thumbnail-gamenights2.jpeg" alt="youtube thumbnail"></a
-      >
-      <p>Episode 2:</p>
-      <figcaption>
-      Clinical Therapist Shani Tran breaks down the unforgettable characters from The Last of Us Part II Remastered.
-      </figcaption>
-    </figure>
+          <h3>The Last of Us Part I</h3>
+          <p>
+            Endure and survive. Relive the beloved game that started it all,
+            rebuilt for the PlayStation®5 console.
+          </p>
 
-    <figure>
-      <a href="https://youtu.be/08E-E2kGKIA"
-        ><img src="./images/tlou2-yt-gamenights3.jpeg" alt="youtube thumbnail"></a
-      >
-      <p>Episode 3:</p>
-      <figcaption>
-      Gaming Analyst Andrea Rene explores the immersive cinematic quality and must-play story of The Last of Us Part II Remastered.
-      </figcaption>
-    </figure>
+          <a href="#">Learn more</a>
+          <a href="index.html">Explore The Last of Us series</a>
+        </div>
 
-  </section>
+        <img
+          src="./images/tlou1-banner-img.jpeg"
+          alt="the last of us 1 poster"
+        />
+      </section>
 
-  <section class="discoverTlou1">
+      <section class="instagram">
+        <h2>FOLLOW NAUGHTY DOG ON INSTAGRAM</h2>
 
-  <div>
-  <h2>DISCOVER THE LAST OF US</h2>
+        <div>
+          <img
+            src="./images/instagram-picture1.jpg"
+            alt="instagram naughty dog image"
+          />
+          <img src="./images/ps-logo-blue.jpeg" alt="ps logo" />
+          <img src="./images/instagram-logo.png" alt="instagram logo" />
+          <!--instagram logo-->
 
-  <h3>The Last of Us Part I</h3>
-  <p>Endure and survive. Relive the beloved game that started it all, rebuilt for the PlayStation®5 console.</p>
+          <p>@naughty-dog-inc</p>
+          <p>november 22</p>
+        </div>
 
-  <a href="#">Learn more</a>
-  <a href="index.html">Explore The Last of Us series</a>
+        <div>
+          <img
+            src="./images/insta-img-2.jpg"
+            alt="instagram naughty dog image"
+          />
+          <img src="./images/ps-logo-blue.jpeg" alt="ps logo" />
+          <img src="./images/instagram-logo.png" alt="instagram logo" />
+          <!--instagram logo-->
 
-  </div>
+          <p>@naughty-dog-inc</p>
+          <p>november 19</p>
+        </div>
 
-  <img src="./images/tlou1-banner-img.jpeg" alt="the last of us 1 poster">
+        <div>
+          <img
+            src="./images/insta-img-3.jpg"
+            alt="instagram naughty dog image"
+          />
+          <img src="./images/ps-logo-blue.jpeg" alt="ps logo" />
+          <img src="./images/instagram-logo.png" alt="instagram logo" />
+          <!--instagram logo-->
 
-  </section>
+          <p>@naughty-dog-inc</p>
+          <p>november 18</p>
+        </div>
 
-  <section class="instagram">
-  <h2>FOLLOW NAUGHTY DOG ON INSTAGRAM</h2>
+        <div>
+          <img
+            src="./images/insta-img-4.jpg"
+            alt="instagram naughty dog image"
+          />
+          <img src="./images/ps-logo-blue.jpeg" alt="ps logo" />
+          <img src="./images/instagram-logo.png" alt="instagram logo" />
+          <!--instagram logo-->
 
-  <div>
-    <img src="./images/instagram-picture1.jpg" alt="instagram naughty dog image">
-    <img src="./images/ps-logo-blue.jpeg" alt="ps logo">
-    <img src="./images/instagram-logo.png" alt="instagram logo">
-    <!--instagram logo-->
-      
-    <p>@naughty-dog-inc</p>
-    <p>november 22</p>
-  </div>
+          <p>@naughty-dog-inc</p>
+          <p>november 15</p>
+        </div>
 
-  <div>
-    <img src="./images/insta-img-2.jpg" alt="instagram naughty dog image">
-    <img src="./images/ps-logo-blue.jpeg" alt="ps logo">
-    <img src="./images/instagram-logo.png" alt="instagram logo">
-    <!--instagram logo-->
-      
-    <p>@naughty-dog-inc</p>
-    <p>november 19</p>
-  </div>
-    
-  <div>
-    <img src="./images/insta-img-3.jpg" alt="instagram naughty dog image">
-    <img src="./images/ps-logo-blue.jpeg" alt="ps logo">
-    <img src="./images/instagram-logo.png" alt="instagram logo">
-    <!--instagram logo-->
-      
-    <p>@naughty-dog-inc</p>
-    <p>november 18</p>
-  </div>
-  
-  <div>
-    <img src="./images/insta-img-4.jpg" alt="instagram naughty dog image">
-    <img src="./images/ps-logo-blue.jpeg" alt="ps logo">
-    <img src="./images/instagram-logo.png" alt="instagram logo">
-    <!--instagram logo-->
-      
-    <p>@naughty-dog-inc</p>
-    <p>november 15</p>
-  </div>
+        <button>Load more</button>
 
-  <button>Load more</button>
+    </section>
 
-  <p>Platform: PS5 </p>
-  <p>Release: 1/19/2024 </p>
-  <p>Publisher: Sony Interactive Entertainment </p>
-  <p>Genres: Adventure, Action </p>
-  <p>Voice: English, French (France), Portuguese (Brazil), Spanish (Mexico) </p>
-  <p>Screen Languages: English, French (France), Portuguese (Brazil), Spanish (Mexico)</p>
+    <section class="gameInfo">
 
-  <p>Online features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).</p>
-  <p>Software subject to license (us.playstation.com/softwarelicense).</p>
-  <p>You can download and play this content on the main PS5 console associated with your account (through the “Console Sharing and Offline Play” setting) and on any other PS5 consoles when you login with your same account.</p>
+      <article>
+        <h3>Game information</h3>
+        <p>Platform: PS5</p>
+        <p>Release: 1/19/2024</p>
+        <p>Publisher: Sony Interactive Entertainment</p>
+        <p>Genres: Adventure, Action</p>
+        <p>
+          Voice: English, French (France), Portuguese (Brazil), Spanish (Mexico)
+        </p>
+        <p>
+          Screen Languages: English, French (France), Portuguese (Brazil),
+          Spanish (Mexico)
+        </p>
 
-  <p>©2024 Sony Interactive Entertainment LLC. Created and developed by Naughty Dog LLC. The Last of Us is a registered trademark of Sony Interactive Entertainment LLC and related companies in the U.S. and other countries.</p>
- 
-</section>
+        <p>
+          Online features require an account and are subject to terms of service
+          and applicable privacy policy (playstationnetwork.com/terms-of-service
+          & playstationnetwork.com/privacy-policy).
+        </p>
+        <p>Software subject to license (us.playstation.com/softwarelicense).</p>
+        <p>
+          You can download and play this content on the main PS5 console
+          associated with your account (through the “Console Sharing and Offline
+          Play” setting) and on any other PS5 consoles when you login with your
+          same account.
+        </p>
+</article>
+        <p>
+          ©2024 Sony Interactive Entertainment LLC. Created and developed by
+          Naughty Dog LLC. The Last of Us is a registered trademark of Sony
+          Interactive Entertainment LLC and related companies in the U.S. and
+          other countries.
+        </p>
+      </section>
+    </main>
 
-</main>
+    <footer>
+      <img
+        src="./images/playstation-seeklogo2.png"
+        alt="playstation logo white"
+      />
 
-<footer>
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Discover The Last of Us</a></li>
+          <li><a href="#"></a>Playstation</li>
+        </ul>
 
-  <img
-      src="./images/playstation-seeklogo2.png" alt="playstation logo white"/>
-  
-  <div>
-      <uL>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Discover The Last of Us</a></li>
-        <li><a href="#"></a>Playstation</li>
-      </uL>
+        <nav>
+          <details>
+            <summary>About</summary>
+            <ul>
+              <li><a href="#">About SIE</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Playstation Studios</a></li>
+              <li><a href="#">Playstation Productions</a></li>
+              <li><a href="#">Corporate</a></li>
+            </ul>
+          </details>
 
-    <nav>
-      
-      <details>
-      <summary>About</summary>
-      <ul>
-        <li><a href="#">About SIE</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Playstation Studios</a></li>
-        <li><a href="#">Playstation Productions</a></li>
-        <li><a href="#">Corporate</a></li>
-      </ul>
-    </details>
+          <details>
+            <summary>Products</summary>
+            <ul>
+              <li><a href="#">PS5</a></li>
+              <li><a href="#">PS4</a></li>
+              <li><a href="#">PS VR2</a></li>
+              <li><a href="#">PS Plus</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Games</a></li>
+            </ul>
+          </details>
 
-    <details>
-      <summary>Products</summary>
-      <ul>
-        <li><a href="#">PS5</a></li>
-        <li><a href="#">PS4</a></li>
-        <li><a href="#">PS VR2</a></li>
-        <li><a href="#">PS Plus</a></li>
-        <li><a href="#">Accessories</a></li>
-        <li><a href="#">Games</a></li>
-      </ul>
-    </details>
+          <details>
+            <summary>Values</summary>
+            <ul>
+              <li><a href="#">Environment</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Online safety</a></li>
+              <li><a href="#">Diversity, equity & inclusion</a></li>
+            </ul>
+          </details>
 
-    <details>
-      <summary>Values</summary>
-      <ul>
-        <li><a href="#">Environment</a></li>
-        <li><a href="#">Accessibility</a></li>
-        <li><a href="#">Online safety</a></li>
-        <li><a href="#">Diversity, equity & inclusion</a></li>
-      </ul>
-    </details>
+          <details>
+            <summary>Support</summary>
+            <ul>
+              <li><a href="#">Support hub</a></li>
+              <li><a href="#">PlayStation Safety</a></li>
+              <li><a href="#">PSN Status</a></li>
+              <li><a href="#">Playstation Repairs</a></li>
+              <li><a href="#">Password reset</a></li>
+              <li><a href="#">Manuals</a></li>
+            </ul>
+          </details>
 
-    <details>
-      <summary>Support</summary>
-      <ul>
-        <li><a href="#">Support hub</a></li>
-        <li><a href="#">PlayStation Safety</a></li>
-        <li><a href="#">PSN Status</a></li>
-        <li><a href="#">Playstation Repairs</a></li>
-        <li><a href="#">Password reset</a></li>
-        <li><a href="#">Manuals</a></li>
-      </ul>
-  </details>
+          <details>
+            <summary>Resources</summary>
+            <ul>
+              <li><a href="#">PSN terms of service</a></li>
+              <li><a href="#">PS Store cancellation policy</a></li>
+              <li><a href="#">Age ratings</a></li>
+              <li><a href="#">Health warning</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Glossary</a></li>
+            </ul>
+          </details>
 
-  <details>
-      <summary>Resources</summary>
-      <ul>
-        <li><a href="#">PSN terms of service</a></li>
-        <li><a href="#">PS Store cancellation policy</a></li>
-        <li><a href="#">Age ratings</a></li>
-        <li><a href="#">Health warning</a></li>
-        <li><a href="#">Developers</a></li>
-        <li><a href="#">Glossary</a></li>
-      </ul>
-  </details>
+          <details>
+            <summary>Connect</summary>
+            <ul>
+              <li>
+                <img src="./images/facebook-logo.png" alt="facebook logo" /><img
+                  src="./images/x-logo.png"
+                  alt="x logo"
+                /><img
+                  src="./images/instagram-logo.png"
+                  alt="instagram logo"
+                /><img src="./images/youtube-logo.png" alt="youtube logo" />
+              </li>
+              <li><a href="#">iOS app</a></li>
+              <li><a href="#">Android APP</a></li>
+              <li><a href="#">Join our playtesting program</a></li>
+            </ul>
+          </details>
+        </nav>
+      </div>
 
-  <details>
-      <summary>Connect</summary>
-      <ul>
-        <li><img src="./images/facebook-logo.png" alt="facebook logo"><img src="./images/x-logo.png" alt="x logo"><img src="./images/instagram-logo.png" alt="instagram logo"><img src="./images/youtube-logo.png" alt="youtube logo"></li>
-        <li><a href="#">iOS app</a></li>
-        <li><a href="#">Android APP</a></li>
-        <li><a href="#">Join our playtesting program</a></li>
-      </ul>
-  </details>
+      <div class="footer-desktop">
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">About SIE</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Playstation Studios</a></li>
+            <li><a href="#">Playstation Productions</a></li>
+            <li><a href="#">Corporate</a></li>
+          </ul>
+        </div>
 
-</nav>
-</div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#">PS5</a></li>
+            <li><a href="#">PS4</a></li>
+            <li><a href="#">PS VR2</a></li>
+            <li><a href="#">PS Plus</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Games</a></li>
+          </ul>
+        </div>
 
-<div class="footer-desktop">
+        <div>
+          <h4>Values</h4>
+          <ul>
+            <li><a href="#">Environment</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Online safety</a></li>
+            <li><a href="#">Diversity, equity & inclusion</a></li>
+          </ul>
+        </div>
 
-  <div>
-    <h4>About</h4>
-    <ul>
-      <li><a href="#">About SIE</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Playstation Studios</a></li>
-      <li><a href="#">Playstation Productions</a></li>
-      <li><a href="#">Corporate</a></li>
-    </ul>
-  </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Support hub</a></li>
+            <li><a href="#">PlayStation Safety</a></li>
+            <li><a href="#">PSN Status</a></li>
+            <li><a href="#">Playstation Repairs</a></li>
+            <li><a href="#">Password reset</a></li>
+            <li><a href="#">Manuals</a></li>
+          </ul>
+        </div>
 
-  <div>
-    <h4>Products</h4>
-    <ul>
-      <li><a href="#">PS5</a></li>
-      <li><a href="#">PS4</a></li>
-      <li><a href="#">PS VR2</a></li>
-      <li><a href="#">PS Plus</a></li>
-      <li><a href="#">Accessories</a></li>
-      <li><a href="#">Games</a></li>
-    </ul>
-  </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">PSN terms of service</a></li>
+            <li><a href="#">PS Store cancellation policy</a></li>
+            <li><a href="#">Age ratings</a></li>
+            <li><a href="#">Health warning</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Glossary</a></li>
+          </ul>
+        </div>
 
-  <div>
-    <h4>Values</h4>
-    <ul>
-      <li><a href="#">Environment</a></li>
-      <li><a href="#">Accessibility</a></li>
-      <li><a href="#">Online safety</a></li>
-      <li><a href="#">Diversity, equity & inclusion</a></li>
-    </ul>
-  </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li>
+              <img src="./images/facebook-logo.png" alt="facebook logo" /><img
+                src="./images/x-logo.png"
+                alt="x logo"
+              /><img
+                src="./images/instagram-logo.png"
+                alt="instagram logo"
+              /><img src="./images/youtube-logo.png" alt="youtube logo" />
+            </li>
+            <li><a href="#">iOS app</a></li>
+            <li><a href="#">Android APP</a></li>
+            <li><a href="#">Join our playtesting program</a></li>
+          </ul>
+        </div>
+      </div>
 
-  <div>
-    <h4>Support</h4>
-    <ul>
-      <li><a href="#">Support hub</a></li>
-      <li><a href="#">PlayStation Safety</a></li>
-      <li><a href="#">PSN Status</a></li>
-      <li><a href="#">Playstation Repairs</a></li>
-      <li><a href="#">Password reset</a></li>
-      <li><a href="#">Manuals</a></li>
-    </ul>
-</div>
+      <div>
+        <img
+          src="./images/sony-interactive-logo-white.png"
+          alt="sony interactive entertainment logo"
+        />
+        <!--<img src="./images/esrb-logo.png" alt="esrb logo" > -->
 
-<div>
-    <h4>Resources</h4>
-    <ul>
-      <li><a href="#">PSN terms of service</a></li>
-      <li><a href="#">PS Store cancellation policy</a></li>
-      <li><a href="#">Age ratings</a></li>
-      <li><a href="#">Health warning</a></li>
-      <li><a href="#">Developers</a></li>
-      <li><a href="#">Glossary</a></li>
-    </ul>
-</div>
+        <p>
+          © 2024 Sony Interactive Entertainment LLC All content, games titles,
+          trade names and/or trade dress, trademarks, artwork and associated
+          imagery are trademarks and/or copyright material of their respective
+          owners. All rights reserved. <a href="#">More Info</a>
+        </p>
+      </div>
 
-<div>
-    <h4>Connect</h4>
-    <ul>
-      <li><img src="./images/facebook-logo.png" alt="facebook logo"><img src="./images/x-logo.png" alt="x logo"><img src="./images/instagram-logo.png" alt="instagram logo"><img src="./images/youtube-logo.png" alt="youtube logo"></li>
-      <li><a href="#">iOS app</a></li>
-      <li><a href="#">Android APP</a></li>
-      <li><a href="#">Join our playtesting program</a></li>
-    </ul>
-</div>
+      <div>
+        <button>United States</button>
 
-</div>
+        <nav>
+          <ul>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Website terms of use</a></li>
+            <li><a href="#">Site map</a></li>
+            <li><a href="#">Do not share my personal information</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="#"><img src="./images/sony-logo-word.png" alt="sony logo" /></a>
+    </footer>
 
-<div>
-<img src="./images/sony-interactive-logo-white.png" alt="sony interactive entertainment logo">
-<!--<img src="./images/esrb-logo.png" alt="esrb logo" > -->
-
-<p>© 2024 Sony Interactive Entertainment LLC
-  All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved. <a href="#">More Info</a></p>
-</div>
-
-<div>
-    <button>United States</button> 
-    
-    <nav>
-      <ul>
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Privacy policy</a></li>
-        <li><a href="#">Website terms of use</a></li>
-        <li><a href="#">Site map</a></li>
-        <li><a href="#">Do not share my personal information</a></li>
-      </ul>
-    </nav>
-</div>
-    <a href="#"><img src="./images/sony-logo-word.png" alt="sony logo"></a> 
-
-</footer>
-
-  <script defer src="scripts/script.js"></script>
-
-</body>
+    <script defer src="scripts/script.js"></script>
+  </body>
 </html>
