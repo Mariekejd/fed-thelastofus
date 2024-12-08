@@ -207,7 +207,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-
+  <img src="./readme-images/toegankelijk-1.jpeg">
+  <img src="./readme-images/toegankelijk-2.jpeg">
+  <img src="./readme-images/toegankelijk-3.jpeg">
+  <img src="./readme-images/toegankelijk-4.jpeg">
+  <img src="./readme-images/toegankelijk-5.jpeg">
 
 </details>
 
@@ -312,7 +316,8 @@ Vragen:
   Nb. Vermeld de bronnen ook in je code.
 
   1. bron 1: MDN: breadcrumps navigation (https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Breadcrumb_Navigation)
-  2. bron 2: Chatgpt voor NO-SCROLL op body in de hamburger menu. (gevraagd hoe ik dit het beste kan oplossen)
+  2. bron 2: Chatgpt voor NO-SCROLL op body in de hamburger menu. (gevraagd hoe ik dit het beste kan oplossen) (ik heb de chat niet meer :/ maar chatgpt heeft de body scroll voor mij geschreven)
   3. bron 3: Soms grid gemaakt met behulp van https://cssgrid-generator.netlify.app/ !!
+  4. Hulp van mede studenten :D
 
 </details>
