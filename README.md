@@ -226,8 +226,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   Ik had voor mijn laatste voortgang gesprek veel vraagjes. Alle zijn goed beantwoord waardoor ik mijn website nu goed kan afronden. Ik merk wel dat ondanks ik een heel eind ben, dat er nog wel een paar dingen zijn die ik moet doen. Ik weet niet of ik alle nieuwe tips uiteindelijk kan toepassen vanwege tijdsgebrek maar ik ga hierin mijn best doen!
 
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 
   ### Agenda voor meeting
   samen met je groepje opstellen
