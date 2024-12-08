@@ -85,6 +85,8 @@ img {
 h2 {
   font-family: Tlou,Arial
 }
+
+/* Header en Nav */
 header button {
   background: 0 0;
   border: none;
@@ -189,6 +191,9 @@ header div {
     content: url("/fed-thelastofus/images/tlou2-remaster-desktop-ver.jpeg")
   }
 }
+
+/* Hamburger menu */
+
 header p {
   padding: 1em;
   font-size: 13px;
@@ -216,6 +221,8 @@ header button {
   display: block;
   padding-left: 1em;
 }
+
+/* no-scroll met behulp van chatgpt gedaan */
 body {
   overflow: auto
 }
@@ -265,6 +272,8 @@ nav .toonMenu {
     margin-right: auto
   }
 }
+
+/* Section 1: story tlou */
 .storyTlou {
   background-image: url(../images/tlou1-franchise-hub-background-block-mobile.jpg);
   background-size: cover;
@@ -301,6 +310,9 @@ nav .toonMenu {
     padding-top: 1.3em
   }
 }
+
+/* Section 2: discover */
+
 .discover {
   overflow: hidden;
   padding: 3em 1em;
@@ -378,6 +390,8 @@ time {
     text-align: center
   }
 }
+
+/*Section 3: Cast */
 .cast {
   position: relative;
   display: flex;
@@ -474,7 +488,7 @@ time {
   border-radius: 2em;
   padding: 1em
 }
-@media (min-width:1024px) {
+@media (min-width:765px) {
   .cast {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -501,6 +515,8 @@ time {
     padding: 1em
   }
 }
+
+/* Section 4: Building tlou */
 .buildingTlou {
   background-color: var(--color-black);
   color: var(--color-background)
@@ -533,7 +549,7 @@ time {
 .buildingTlou figure:hover {
   transform: scale(1.04)
 }
-@media (min-width:1024px) {
+@media (min-width:765px) {
   .buildingTlou {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -572,6 +588,9 @@ time {
     grid-row: 4/5
   }
 }
+
+/*Section 5: Tlou News */
+
 .tlouNews {
   background-color: var(--color-black);
   color: var(--color-white);
@@ -659,6 +678,9 @@ p:nth-of-type(4) {
     font-size: .8em!important
   }
 }
+
+/* Section 6: Tlou community */
+
 .tlouCommunity {
   color: var(--color-background);
   background-image: url(../images/tlou-community-mobile-ver.jpeg);
@@ -701,6 +723,8 @@ p:nth-of-type(4) {
     max-width: 600px
   }
 }
+
+/* Section 7: faq */
 .faq {
   background-color: #000;
   color: #fff;
@@ -736,8 +760,33 @@ p:nth-of-type(4) {
 }
 
 .faq img{
-	max-width: 500px;
+	max-width: 600px;
 }
+
+@media (min-width: 1024px){
+
+
+	.faq{
+		display: flex ;
+		flex-direction: row;
+	}
+
+	.faq h2{
+		flex-direction: column;
+		padding: 1em;
+		padding-top: 0;
+	}
+
+	.faq img{
+		order: 3;
+	}
+
+	.faq div{
+		flex-direction: row;
+	}
+}
+
+/* Setcion 8: About */
 
 .about h2 {
   letter-spacing: 2px;
@@ -778,6 +827,8 @@ p:nth-of-type(4) {
     padding: 0
   }
 }
+
+/* Pagina 2 - Section 1: shop */
 .shop {
   background-color: var(--color-button-balk);
   margin-top: 5em;
@@ -884,7 +935,7 @@ ul {
   padding: .5em 0;
   border-radius: 3em
 }
-@media (min-width:1024px) {
+@media (min-width:765px) {
   .shop {
     background-image: url(../images/tlou2-remaster-desktop-ver-shop.jpeg);
     background-size: cover;
@@ -920,6 +971,9 @@ ul {
     font-size: .8em!important
   }
 }
+
+/* Section 3: Tlou remaster */
+
 .remasterTlou2 {
   position: relative;
   background-image: url(../images/tlou2-background-img-1.jpg);
@@ -972,6 +1026,9 @@ ul {
     padding-top: 8em
   }
 }
+
+/*Section 4: feautures */
+
 .features {
   background-color: var(--color-button-balk);
   padding: 1em
@@ -1012,14 +1069,15 @@ ul {
 .features article > img:hover {
   transform: scale(1.04)
 }
-@media (min-width:1024px) {
+@media (min-width:765px) {
   .features {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: .3fr repeat(2,.5fr) .3fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding: 5em
+    padding: 5em;
+	padding-bottom: 0;
   }
   .features > p:nth-of-type(1),
   .features h2 {
@@ -1063,6 +1121,9 @@ ul {
     font-size: .9em!important
   }
 }
+
+/* Section 5: Upgrade */ 
+
 .upgrade {
   background-color: var(--color-blue-gray);
   padding: 1em;
@@ -1152,6 +1213,9 @@ ul {
     font-size: 1.5em!important
   }
 }
+
+/* Section 6: Game Nights */
+
 .gameNights {
   background-color: var(--color-black);
   color: var(--color-background);
@@ -1196,7 +1260,10 @@ ul {
 .gameNights figure:hover {
   transform: scale(1.04)
 }
-@media (min-width:1024px) {
+@media (min-width:765px) {
+
+	/* deze grid is gemaakt met hulp van grid maker https://cssgrid-generator.netlify.app/ */
+	
   .gameNights {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -1221,6 +1288,9 @@ ul {
     grid-area: 2/3/3/4
   }
 }
+
+/* Section 7: discover tlou */
+
 .discoverTlou1 {
   color: var(--color-white);
   position: relative;
@@ -1268,6 +1338,7 @@ ul {
   object-fit: cover
 }
 @media (min-width:1024px) {
+
   .discoverTlou1 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -1280,6 +1351,9 @@ ul {
     grid-area: 2/1/3/2
   }
 }
+
+/* Section 8: Instagram feed */
+
 .instagram {
   background-color: var(--color-button-balk);
   color: var(--color-white);
@@ -1336,7 +1410,9 @@ ul {
   width: auto;
   padding-bottom: 1em
 }
-@media (min-width:1024px) {
+@media (min-width:765px) {
+
+	/* deze grid is gemaakt met grid maker https://cssgrid-generator.netlify.app/ */
   .instagram {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -1366,6 +1442,8 @@ ul {
     display: none
   }
 }
+/* Section 9 Game Info */
+
 .gameInfo {
   background-color: var(--color-button-balk)
 }
@@ -1406,6 +1484,8 @@ ul {
     grid-area: 3/2/4/3
   }
 }
+
+/* Section 10: footer */
 footer {
   background-color: var(--color-footer);
   color: var(--color-white);
@@ -1427,6 +1507,9 @@ footer > div:nth-of-type(1) > ul:nth-of-type(1) {
   align-items: end;
   font-family: SST-RomanLight,Arial
 }
+
+/* breadcrumbs gedaan met behulo van bron: MDN breadcrumbs */
+
 footer > div:nth-of-type(1) > ul:nth-of-type(1) li:nth-of-type(1):after {
   display: inline-block;
   margin: 0 .25rem;
