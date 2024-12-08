@@ -334,11 +334,12 @@ nav .toonMenu {
 }
 .discover article {
   margin: 1em;
-  transition: .3s
+  transition: .3s;
+  border-radius: 1em;
+  padding: .3em;
 }
 .discover article:hover {
   background-color: rgb(26,27,29,.9);
-  border-radius: 1em;
   border: solid 2px var(--color-font-gray);
   transform: scale(1.04)
 }
@@ -1263,7 +1264,7 @@ ul {
 @media (min-width:765px) {
 
 	/* deze grid is gemaakt met hulp van grid maker https://cssgrid-generator.netlify.app/ */
-	
+
   .gameNights {
     display: grid;
     grid-template-columns: repeat(3,1fr);
