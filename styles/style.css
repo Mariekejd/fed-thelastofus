@@ -734,11 +734,11 @@ p:nth-of-type(4) {
   list-style-type: "+";
   padding-left: 1em
 }
-@media (min-width:1024px) {
-  .faq img {
-    width: 40%
-  }
+
+.faq img{
+	max-width: 500px;
 }
+
 .about h2 {
   letter-spacing: 2px;
   text-align: center;
