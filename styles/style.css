@@ -289,7 +289,7 @@ body.no-scroll {
 	overflow: hidden; /* Schakelt scrollen uit */
   }
 
-header nav > div ul{
+header nav div ul{
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -306,7 +306,7 @@ header nav > div ul{
 	transition: 300ms;
 }
 
-header nav > div a{
+header nav div a{
 	display: flex;
 	width: 4em;
 	padding: 0;
@@ -314,7 +314,7 @@ header nav > div a{
 	padding-left: 1em;
 }
 
-header nav > div img{
+header nav div img{
 	padding-right: 1.5em;
 }
 
@@ -330,10 +330,6 @@ nav .toonMenu{
 	width: 100%;
 }
 
-header nav > div:nth-of-type(1){
-	display: none;
-
-}
 
 @media (min-width: 1024px) {
 
