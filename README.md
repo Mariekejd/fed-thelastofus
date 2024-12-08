@@ -72,18 +72,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -> toetsenbord voor navigatie is ook beschikbaar.
 
   Spasmes/Parkinsons: 
-  -> Muis/touchpad niet goed bruikbaar, dit gaat erg moeizaam. 
+  -> Muis/touchpad niet goed bruikbaar, dit gaat erg moeizaam. Dit komt vooral van de vele plotselinge bewegingen die je maakt wat er voor zorgt dat het gebruiken van ee muis heel lastig gaat. Een muis is te precies werk.
   -> Verschillende toetsen wel bruikbaar in het navigeren van de website. 
-  -> Dit ligt er wel aan hoe heftig de spieren trekken want opgegeven moment was het voor mij vrijn lastig om überhaupt te functioneren.
+  -> Dit ligt er wel aan hoe heftig de spieren trekken want opgegeven moment was het voor mij vrij lastig om überhaupt te functioneren.
   Dit misschien omdat ik hierin ook geen levenservaring heb.
 
   Zicht: getest aan de hand van verschillende brilletjes die het zicht beperken
   -> door verschillende brilletjes was de website voor een groot deel nog toegankelijk, de belangrijkste elementen waren over het algemeen nog in beeld.
   ->Er is tekst met laag contrast of onvoldoende vergrotingsopties en kan moeilijk leesbaar zijn.
-  -> Kleurenblindheid kan problemen veroorzaken als de kleur de enige manier is om informatie over te brengen
+  -> Kleurenblindheid kan problemen veroorzaken als de kleur de enige manier is om informatie over te brengen.
 
   Concentratie
-  -> De site bevat visueel drukke elementen zoals dynamische afbeeldingen en video's 
+  -> De site bevat visueel drukke elementen zoals dynamische afbeeldingen en video's zoals veel carrousels die uit zich zelf bewegen en wisselen van plaatje. 
   -> Geen opties zoals vereenvoudige weergave of 'focusmodus'
   -> De navigatie is een beetje complex door dat je scrolt door een paar opties en de andere website navigatie in een hamburger ziiten (op mobiel).
   
@@ -161,7 +161,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit gesprek liep prima en heel soepeltjes. Ik heb mijn vragen kunnen stellen en hieruit weer nieuwe inzichten gekregen waarmee ik door kan werken. Ik ben bijna klaar met alle CSS. De tweede pagina heeft nog een paar dingetejs nodig en dan kan ik beginnen aan responsive.
 
 
   ### Agenda voor meeting
@@ -221,6 +221,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+  Ik had voor mijn laatste voortgang gesprek veel vraagjes. Alle zijn goed beantwoord waardoor ik mijn website nu goed kan afronden. Ik merk wel dat ondanks ik een heel eind ben, dat er nog wel een paar dingen zijn die ik moet doen. Ik weet niet of ik alle nieuwe tips uiteindelijk kan toepassen vanwege tijdsgebrek maar ik ga hierin mijn best doen!
+
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
@@ -263,9 +265,9 @@ Vragen:
   - dialogs toevoegen! (DONE)
   - 
   
-  - nav fixen tweede pagina
+  - nav fixen tweede pagina (DONE)
   - Darkmode!!!
-  - responsive 2de pagina
+  - responsive 2de pagina (DONE)
 
 
 
@@ -310,7 +312,7 @@ Vragen:
   Nb. Vermeld de bronnen ook in je code.
 
   1. bron 1: MDN: breadcrumps navigation (https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Breadcrumb_Navigation)
-  2. bron 2
+  2. bron 2: Chatgpt voor NO-SCROLL op body in de hamburger menu. (gevraagd hoe ik dit het beste kan oplossen)
   3. ...
 
 </details>
