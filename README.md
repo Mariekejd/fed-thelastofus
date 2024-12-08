@@ -103,12 +103,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de tweede pagina
   <img src="readme-images/breakdown-schets2.jpg" width="375px" alt="breakdown van de tweede pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -132,7 +126,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Marieke        | Berend             | Anko         | Fatima           |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -213,6 +207,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./readme-images/toegankelijk-4.jpeg">
   <img src="./readme-images/toegankelijk-5.jpeg">
 
+  Over het algemeen moet ik wel zeggen dat ik de eerste keer deze toegankelijkheids lijst bij heel veel punten niet heb begrepen. Hierdoor zijn sommige opties in de eerste test verkeerd aangekruist. 
+
+  Wat ik beter heb gedaan dan de officiele site is het gebruik maken van een semantisch correcte html structuur met de juiste heading elementen, sections en images met alt tributen. Ook heb ik hierin op de juiste manier gebruik gemaakt van button's en linkjes. Bij de officiele site was niet goed te detecteren wat ze daarmee hadden gedaan.
+  Ook heb ik dark-mode toegevoegd. Dit is niet aangekruisd bij de tweede test maar des tijds toen ik em invulde had ik deze nog niet. 
+
 </details>
 
 
@@ -263,14 +262,14 @@ Vragen:
   -> Screenshots toegankelijkheid toevoegen in proces verslag!
 
   andere to-do's:
-  - hover states niet vergeten! (halfway)
+  - hover states niet vergeten! (DONE)
   - Faq details opleuken (DONE)
   - footer responsive! (DONE)
   - dialogs toevoegen! (DONE)
   - 
   
   - nav fixen tweede pagina (DONE)
-  - Darkmode!!!
+  - Darkmode!!! (DONE)
   - responsive 2de pagina (DONE)
 
 
@@ -287,19 +286,31 @@ Vragen:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshot5.png" width="375px" alt="uitomst opdracht 1">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/screenshot1.png" width="375px" alt="top">
+  <img src="readme-images/screenshot2.png" width="375px" alt="top">
 
+  Ik heb bij deze opdracht geleerd hoe ik grid kan gebruiken en tegelijkertijd mijn site responsive maak. Ik heb in het eerste jaar altijd een beetje moeite gehad met het positioneren van dingen dus ik heb me in deze opdracht juist heel erg gefocust op dit gebied. Ook wilde ik dolsgraag leren responsive maken omdat ik ook nog nooit in aanraking ben geweest met media queries. Ik vind dat dit voor mijn eerste keer een echte website bouwen met deze nieuwe elementen dat dit me best goed is gelukt en daar ben ik wel trots op.
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Mijn puntje om in te ontwikkelen is om met structuur te gaan coderen. Ik heb bij dit project best wel vaak ruzie gehad met mijn eigen code omdat ik dan perongeluk elementen aan t overschrijven was etc. Ook had ik vanaf het begin mijn website die ik ging namaken nog beter moeten analyseren omdat ik in eerste instantie soms stappen heb overgeslagen of heb overzien waardoor het lastiger was om die last-minute nog toe te voegen.
+
+  Hierbij heb ik als voorbeeld: het hamburger menu. Deze werkt wel en is te zien op klein formaat. Zodra de width voorbij 1024px gaat zal deze optie verdwijnen. Alleen zouden deze navigatie knoppen wel nog in de nav moeten verschijnen, ik ben dit helemaal vergeten te verwerken en kwam hier op het laatst pas achter. Dit is mij uiteindelijk ook niet meer gelukt. Ik heb het geprobeerd op te lossen in een kopie bestand maar het lukte me niet meer ik zat in tijdsnood. 
+
+  Ik vind dit achteraf gezien wel jammer, ik denk dat dit wel was gelukt als ik dit vanaf het begin had mee bedacht.
+
+  <img src="readme-images/screenshot6.png" width="375px" alt="bummer">
+
+  Ook als ik meer tijd had gehad had ik gebruik willen maken van clamps (ik weet nie zeker of deze hadden geholpen) om mijn fonts op verschillende formaten uitzich aan te late passen. Zo zijn er wel meer dingetjes die ik niet meer heb kunnen verwerken vanwege te weinig tijd. 
+
 </details>
 
 
