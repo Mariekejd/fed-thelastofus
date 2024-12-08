@@ -49,6 +49,21 @@
   --font-regular-text: Arial,Helvetica,sans-serif;
   --font-heading-text: "theLastofUs"
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+	--color-black: #000000;
+  	--color-white: #845b22;
+ 	--color-gray: #ffffff;
+  	--color-button-red: #ffffff;
+	}
+
+
+
+}
+
+
 @media (min-width:1024px) {
   p {
     font-size: 1em!important
@@ -63,6 +78,7 @@
     font-size: 2em!important
   }
 }
+
 img {
   width: 100%
 }
@@ -71,7 +87,7 @@ h2 {
 }
 header button {
   background: 0 0;
-  border: none
+  border: none;
 }
 header nav {
   position: fixed;
@@ -197,7 +213,8 @@ header button {
   border: none
 }
 .burgerKnop {
-  display: block
+  display: block;
+  padding-left: 1em;
 }
 body {
   overflow: auto
@@ -296,6 +313,7 @@ nav .toonMenu {
   overflow-x: scroll
 }
 .discover h2 {
+  color: var(--color-white);
   position: relative;
   letter-spacing: 2px;
   font-size: 2em;
@@ -566,7 +584,8 @@ time {
   text-align: center;
   padding-top: 1em;
   font-size: 1.8em;
-  display: block
+  display: block;
+  color: var(--color-white);
 }
 .tlouNews div {
   display: flex;
@@ -691,7 +710,8 @@ p:nth-of-type(4) {
   padding-left: .3em;
   padding-bottom: .3em;
   font-size: 3em;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  color: var(--color-white);
 }
 .faq details {
   list-style-type: none;
@@ -1374,7 +1394,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-rows: .2fr 1fr .2fr;
-    grid-column-gap: px;
+    grid-column-gap: 0px;
     grid-row-gap: 16px;
     padding-bottom: 0
   }
