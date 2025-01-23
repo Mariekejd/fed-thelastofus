@@ -50,7 +50,7 @@
   --font-heading-text: "theLastofUs"
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
 
 	--color-black: #000000;
@@ -61,7 +61,7 @@
 
 
 
-}
+} */
 
 
 @media (min-width:1024px) {
